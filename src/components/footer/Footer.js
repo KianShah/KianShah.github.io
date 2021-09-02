@@ -15,7 +15,7 @@ export default function Footer(props) {
             ❤️
           </span>
           .{"  "} Powered with{" "}
-          <span role="img" aria-label="heart">
+          <span role="img" aria-label="coffee">
             ☕
           </span>
         </pre>
