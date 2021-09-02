@@ -1,7 +1,7 @@
 {
   "private": true,
   "name": "portfolio",
-  "homepage": "http://kianshah.github.io/PortfolioV2",
+  "homepage": "http://kianshah.github.io",
   "version": "1.0.0",
   "scripts": {
     "analyze": "source-map-explorer 'build/static/js/*.js'",
