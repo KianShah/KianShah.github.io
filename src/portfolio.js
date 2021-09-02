@@ -53,7 +53,7 @@ export const skills = {
       fileName: "FullStackImg",
       skills: [
         "⚡ Develop highly interactive Front End / User Interfaces for web and mobile applications",
-        "⚡ Building complex backend infrastructure to fulfill business goals",
+        "⚡ Building complex backend infrastructure to fulfill business needs",
         "⚡ Application deployment and configuration on the cloud",
       ],
       softwareSkills: [
@@ -377,7 +377,7 @@ export const projectsHeader = {
 export const contactPageData = {
   contactSection: {
     title: "Contact Me",
-    profile_image_path: "kian.jpg",
+    profile_image_path: "kian-compressed.jpg",
     description:
       "You can contact me at the places mentioned below. I will try to get back to you as fast as I can! ",
   },

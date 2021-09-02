@@ -12,6 +12,7 @@ export default function socialMedia() {
           target="_blank"
           rel="noopener noreferrer"
           key={socialMedia}
+          name={socialMedia}
         >
           <i className={`fab fa-${socialMedia}`} />
           <span />

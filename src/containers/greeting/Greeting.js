@@ -36,17 +36,17 @@ export default function Greeting(props) {
                 {greeting.subTitle}
               </p>
               <SocialMedia />
-              <div className="portfolio-repo-btn-div">
-                <button
-                  {...styles}
-                  className="button"
-                  onClick={() => {
-                    window.location.href += "#contact"; //Go to the target element.
-                  }}
-                >
-                  Contact Me
-                </button>
-              </div>
+              {/*<div className="portfolio-repo-btn-div">*/}
+              {/*  <button*/}
+              {/*    {...styles}*/}
+              {/*    className="button"*/}
+              {/*    onClick={() => {*/}
+              {/*      window.location.href += "#contact"; //Go to the target element.*/}
+              {/*    }}*/}
+              {/*  >*/}
+              {/*    Contact Me*/}
+              {/*  </button>*/}
+              {/*</div>*/}
             </div>
           </div>
           <div className="greeting-image-div">

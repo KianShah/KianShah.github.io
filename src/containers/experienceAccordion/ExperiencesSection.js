@@ -11,7 +11,7 @@ function ExperiencesSection(props) {
     <div className="experience-accord">
       <ThemeProvider theme={theme.name === "light" ? LightTheme : DarkTheme}>
         {props.sections.map((section) => (
-          <div>
+          <div key={section.title}>
             <h3>{section.title}</h3>
             {section["experiences"].map((experience, ind) => (
               <ExperienceCard experience={experience} theme={theme} key={ind} />
