@@ -2,7 +2,7 @@ import React from "react";
 import ExperiencesSection from "../../containers/experienceAccordion/ExperiencesSection.js";
 import "./Experience.css";
 import { experience } from "../../portfolio.js";
-import { Fade } from "react-reveal";
+import Fade from "react-reveal/Fade";
 import ExperienceImg from "./ExperienceImg";
 
 function Experience(props) {

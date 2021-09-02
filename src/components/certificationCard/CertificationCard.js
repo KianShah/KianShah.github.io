@@ -1,6 +1,6 @@
 import React from "react";
 import "./CertificationCard.css";
-import { Fade } from "react-reveal";
+import Fade from "react-reveal/Fade";
 import { style } from "glamor";
 
 function CertificationCard(props) {

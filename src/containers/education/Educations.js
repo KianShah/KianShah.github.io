@@ -2,7 +2,7 @@ import React from "react";
 import "./Educations.css";
 import DegreeCard from "../../components/degreeCard/DegreeCard.js";
 import { degrees } from "../../portfolio";
-import { Fade } from "react-reveal";
+import Fade from "react-reveal/Fade";
 
 function Educations(props) {
   const theme = props.theme;

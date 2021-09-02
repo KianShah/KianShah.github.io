@@ -1,6 +1,6 @@
 import React from "react";
 import SocialMedia from "../socialMedia/SocialMedia";
-import { Fade } from "react-reveal";
+import Fade from "react-reveal/Fade";
 import "./ContactComponent.css";
 import { greeting, contactPageData } from "../../portfolio.js";
 import { style } from "glamor";
