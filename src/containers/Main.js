@@ -14,18 +14,8 @@ export default function Main(propss) {
         <Header theme={propss.theme} setTheme={propss.setTheme} />
         <Switch>
           <Route
-            path="/"
+            path={["/", "/home"]}
             exact
-            render={(props) => (
-              <Home
-                {...props}
-                theme={propss.theme}
-                setTheme={propss.setTheme}
-              />
-            )}
-          />
-          <Route
-            path="/home"
             render={(props) => (
               <Home
                 {...props}
