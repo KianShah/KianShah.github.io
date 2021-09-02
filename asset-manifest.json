@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/static/css/main.55d435e0.chunk.css",
-    "main.js": "/static/js/main.e69d2c2d.chunk.js",
-    "main.js.map": "/static/js/main.e69d2c2d.chunk.js.map",
+    "main.js": "/static/js/main.0e812fb1.chunk.js",
+    "main.js.map": "/static/js/main.0e812fb1.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.19ccc7f6.js",
     "runtime-main.js.map": "/static/js/runtime-main.19ccc7f6.js.map",
-    "static/js/2.bf05e903.chunk.js": "/static/js/2.bf05e903.chunk.js",
-    "static/js/2.bf05e903.chunk.js.map": "/static/js/2.bf05e903.chunk.js.map",
+    "static/js/2.7b59cc61.chunk.js": "/static/js/2.7b59cc61.chunk.js",
+    "static/js/2.7b59cc61.chunk.js.map": "/static/js/2.7b59cc61.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.eceadc17f8b4c3bba2668cda752b701d.js": "/precache-manifest.eceadc17f8b4c3bba2668cda752b701d.js",
+    "precache-manifest.b85975031bb8e9c7792d1f92ae7ad5bc.js": "/precache-manifest.b85975031bb8e9c7792d1f92ae7ad5bc.js",
     "service-worker.js": "/service-worker.js",
     "static/css/main.55d435e0.chunk.css.map": "/static/css/main.55d435e0.chunk.css.map",
-    "static/js/2.bf05e903.chunk.js.LICENSE.txt": "/static/js/2.bf05e903.chunk.js.LICENSE.txt",
+    "static/js/2.7b59cc61.chunk.js.LICENSE.txt": "/static/js/2.7b59cc61.chunk.js.LICENSE.txt",
     "static/media/index.css": "/static/media/Montserrat-Regular.ee653992.ttf",
     "static/media/buld.jpg": "/static/media/buld.a1051a22.jpg",
     "static/media/all.css": "/static/media/fa-solid-900.c2801fb4.svg",
@@ -19,6 +19,8 @@
     "static/media/github.png": "/static/media/github.0ba2aa20.png",
     "static/media/googleAssistant.jpg": "/static/media/googleAssistant.0c8a4c11.jpg",
     "static/media/kian-compressed.jpg": "/static/media/kian-compressed.7e483be4.jpg",
+    "static/media/kian-profile.png": "/static/media/kian-profile.acc5174e.png",
+    "static/media/kian-square.jpg": "/static/media/kian-square.a85feab2.jpg",
     "static/media/kian.jpg": "/static/media/kian.317a984c.jpg",
     "static/media/mlh-logo.svg": "/static/media/mlh-logo.bc5cfd3a.svg",
     "static/media/mlh.png": "/static/media/mlh.53dd27a8.png",
@@ -29,8 +31,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.19ccc7f6.js",
-    "static/js/2.bf05e903.chunk.js",
+    "static/js/2.7b59cc61.chunk.js",
     "static/css/main.55d435e0.chunk.css",
-    "static/js/main.e69d2c2d.chunk.js"
+    "static/js/main.0e812fb1.chunk.js"
   ]
 }
