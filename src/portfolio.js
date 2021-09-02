@@ -273,8 +273,8 @@ export const degrees = {
       duration: "Sept. 2016 - Nov. 2021",
       descriptions: [
         "⚡ Intimate knowledge of core CS topics like Data Structures, Relational Databases, Networking, Operating Systems, etc.",
-        "⚡ Completed 2 Machine Learning fundamentals courses (Sklearn, supervised and unsupervised models)",
-        "⚡ Used the skills I have learnt to create my own personal projects",
+        "⚡ Completed 2 Machine Learning fundamentals courses (Sklearn, supervised and unsupervised models, Neural Networks)",
+        "⚡ Developed strong fundamental math skills in Calculus, Linear Algebra and Statistics.",
         "⚡ Participated in 12 months of the Science Co-op program",
       ],
       website_link: "https://www.ubc.ca/",
@@ -319,7 +319,7 @@ export const experience = {
   title: "Experience",
   subtitle: "Work and Volunteer experience",
   description:
-    "I've completed one internship. I've mostly done projects on my own and I am actively looking for internships. I love organizing workshops to share my knowledge with others.",
+    "My projects make use of a vast variety of modern frameworks and tools. Most of my experience consists of developing full-stack projects and deploying them on the Cloud.",
   header_image_path: "experience.svg",
   sections: [
     {

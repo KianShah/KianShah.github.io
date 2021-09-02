@@ -6,12 +6,19 @@ export default function Footer(props) {
   return (
     <div className="footer-div">
       <Fade>
-        <p className="footer-text" style={{ color: props.theme.secondaryText }}>
+        <pre
+          className="footer-text"
+          style={{ color: props.theme.secondaryText }}
+        >
           Made with{" "}
           <span role="img" aria-label="heart">
             ❤️
           </span>
-        </p>
+          .{"  "} Powered with{" "}
+          <span role="img" aria-label="heart">
+            ☕
+          </span>
+        </pre>
       </Fade>
     </div>
   );
