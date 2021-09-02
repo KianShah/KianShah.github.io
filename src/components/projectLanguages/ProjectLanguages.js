@@ -18,15 +18,24 @@ function ProjectLanguages(props) {
                   </Tooltip>
                 }
               >
-                <li
-                  className="software-skill-inline-languages"
-                  name={logo.skillName}
-                >
-                  <span
-                    className="iconify"
-                    data-icon={logo.iconifyClass}
-                    data-inline="false"
-                  />
+                <li className="software-skill-inline-languages">
+                  {
+                    // Custom svg for nativebase because iconify doesn't have it :(
+                    logo.name === "NativeBase" ? (
+                      <span className="iconify">
+                        <img
+                          src={require("../../assests/images/nativebase.svg")}
+                          alt="NativeBase"
+                        />
+                      </span>
+                    ) : (
+                      <span
+                        className="iconify"
+                        data-icon={logo.iconifyClass}
+                        data-inline="false"
+                      />
+                    )
+                  }
                 </li>
               </OverlayTrigger>
             );
