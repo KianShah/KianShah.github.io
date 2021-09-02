@@ -1,23 +1,24 @@
 {
   "files": {
-    "main.css": "/PortfolioV2/static/css/main.eba607d5.chunk.css",
-    "main.js": "/PortfolioV2/static/js/main.7bd6c65b.chunk.js",
-    "main.js.map": "/PortfolioV2/static/js/main.7bd6c65b.chunk.js.map",
+    "main.css": "/PortfolioV2/static/css/main.969994ae.chunk.css",
+    "main.js": "/PortfolioV2/static/js/main.de854f2b.chunk.js",
+    "main.js.map": "/PortfolioV2/static/js/main.de854f2b.chunk.js.map",
     "runtime-main.js": "/PortfolioV2/static/js/runtime-main.fa9cfae2.js",
     "runtime-main.js.map": "/PortfolioV2/static/js/runtime-main.fa9cfae2.js.map",
-    "static/js/2.6a480ca6.chunk.js": "/PortfolioV2/static/js/2.6a480ca6.chunk.js",
-    "static/js/2.6a480ca6.chunk.js.map": "/PortfolioV2/static/js/2.6a480ca6.chunk.js.map",
+    "static/js/2.1bbde9d2.chunk.js": "/PortfolioV2/static/js/2.1bbde9d2.chunk.js",
+    "static/js/2.1bbde9d2.chunk.js.map": "/PortfolioV2/static/js/2.1bbde9d2.chunk.js.map",
     "index.html": "/PortfolioV2/index.html",
-    "precache-manifest.4b647f4016f1320ed9656bb45a6ff18d.js": "/PortfolioV2/precache-manifest.4b647f4016f1320ed9656bb45a6ff18d.js",
+    "precache-manifest.175ee0abf28ebd8634ad36f08642d2b8.js": "/PortfolioV2/precache-manifest.175ee0abf28ebd8634ad36f08642d2b8.js",
     "service-worker.js": "/PortfolioV2/service-worker.js",
-    "static/css/main.eba607d5.chunk.css.map": "/PortfolioV2/static/css/main.eba607d5.chunk.css.map",
-    "static/js/2.6a480ca6.chunk.js.LICENSE.txt": "/PortfolioV2/static/js/2.6a480ca6.chunk.js.LICENSE.txt",
+    "static/css/main.969994ae.chunk.css.map": "/PortfolioV2/static/css/main.969994ae.chunk.css.map",
+    "static/js/2.1bbde9d2.chunk.js.LICENSE.txt": "/PortfolioV2/static/js/2.1bbde9d2.chunk.js.LICENSE.txt",
     "static/media/index.css": "/PortfolioV2/static/media/Montserrat-Regular.ee653992.ttf",
     "static/media/buld.jpg": "/PortfolioV2/static/media/buld.a1051a22.jpg",
     "static/media/all.css": "/PortfolioV2/static/media/fa-solid-900.c2801fb4.svg",
     "static/media/gdg.png": "/PortfolioV2/static/media/gdg.6364dbb3.png",
     "static/media/github.png": "/PortfolioV2/static/media/github.0ba2aa20.png",
     "static/media/googleAssistant.jpg": "/PortfolioV2/static/media/googleAssistant.0c8a4c11.jpg",
+    "static/media/kian-compressed.jpg": "/PortfolioV2/static/media/kian-compressed.7e483be4.jpg",
     "static/media/kian.jpg": "/PortfolioV2/static/media/kian.317a984c.jpg",
     "static/media/mlh-logo.svg": "/PortfolioV2/static/media/mlh-logo.bc5cfd3a.svg",
     "static/media/mlh.png": "/PortfolioV2/static/media/mlh.53dd27a8.png",
@@ -28,8 +29,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.fa9cfae2.js",
-    "static/js/2.6a480ca6.chunk.js",
-    "static/css/main.eba607d5.chunk.css",
-    "static/js/main.7bd6c65b.chunk.js"
+    "static/js/2.1bbde9d2.chunk.js",
+    "static/css/main.969994ae.chunk.css",
+    "static/js/main.de854f2b.chunk.js"
   ]
 }
