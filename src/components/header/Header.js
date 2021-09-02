@@ -3,7 +3,7 @@ import "./Header.css";
 import { Fade } from "react-reveal";
 import { NavLink, Link } from "react-router-dom";
 import { greeting, settings } from "../../portfolio.js";
-import { CgSun } from "react-icons/cg/";
+import { CgSun } from "react-icons/cg";
 import { HiMoon } from "react-icons/hi";
 import { style } from "glamor";
 
@@ -21,19 +21,17 @@ function Header(props) {
     border: "none",
     alignItems: "center",
     justifyContent: "center",
-    backgroundColor: props.theme.name === "light" ? "#7CD1F7" : "#292C3F",
+    backgroundColor: theme.name === "light" ? "#7CD1F7" : "#292C3F",
     outline: "none",
     transition: "all 0.2s ease-in-out",
     ":hover": {
-      boxShadow: `0 3px 8px ${
-        props.theme.name === "light" ? "#F7D774" : "#646464"
-      }`,
+      boxShadow: `0 3px 8px ${theme.name === "light" ? "#F7D774" : "#646464"}`,
     },
   });
 
   const link = settings.isSplash ? "/splash" : "home";
 
-  const [currTheme, setCurrTheme] = useState(props.theme);
+  const [currTheme, setCurrTheme] = useState(theme.name);
 
   function changeTheme() {
     if (currTheme === "light") {
@@ -48,17 +46,17 @@ function Header(props) {
   }
 
   const icon =
-    props.theme.name === "dark" ? (
+    theme.name === "dark" ? (
       <HiMoon
         strokeWidth={1}
         size={20}
-        color={props.theme.name === "light" ? "#F9D784" : "#A7A7A7"}
+        color={theme.name === "light" ? "#F9D784" : "#A7A7A7"}
       />
     ) : (
       <CgSun
         strokeWidth={1}
         size={20}
-        color={props.theme.name === "light" ? "#F9D784" : "#A7A7A7"}
+        color={theme.name === "light" ? "#F9D784" : "#A7A7A7"}
       />
     );
 
@@ -67,15 +65,15 @@ function Header(props) {
       <div>
         <header className="header">
           <NavLink to={link} tag={Link} className="logo">
-            <span style={{ color: theme.text }}></span>
+            <span style={{ color: theme.text }} />
             <span className="logo-name" style={{ color: theme.text }}>
-              {greeting.logo_name}
+              {greeting.getLogo()}
             </span>
-            <span style={{ color: theme.text }}></span>
+            <span style={{ color: theme.text }} />
           </NavLink>
           <input className="menu-btn" type="checkbox" id="menu-btn" />
           <label className="menu-icon" htmlFor="menu-btn">
-            <span className="navicon"></span>
+            <span className="navicon" />
           </label>
           <ul className="menu">
             <li>
