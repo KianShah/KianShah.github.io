@@ -4,6 +4,7 @@ import "./ExperienceCard.css";
 function ExperienceCard(props) {
   const experience = props.experience;
   const theme = props.theme;
+
   return (
     <div
       className="experience-card"
@@ -55,7 +56,7 @@ function ExperienceCard(props) {
         </div>
         <p
           className="experience-card-description"
-          style={{ color: theme.text }}
+          style={{ color: theme.text, whiteSpace: "pre-line" }}
         >
           {experience["description"]}
         </p>

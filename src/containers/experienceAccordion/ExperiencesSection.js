@@ -1,7 +1,6 @@
 import React from "react";
 import ExperienceCard from "../../components/experienceCard/ExperienceCard.js";
 import "./ExperienceAccordion.css";
-import { Accordion, Panel } from "baseui/accordion";
 import { DarkTheme, LightTheme, ThemeProvider } from "baseui";
 
 function ExperiencesSection(props) {
@@ -12,7 +11,7 @@ function ExperiencesSection(props) {
       <ThemeProvider theme={theme.name === "light" ? LightTheme : DarkTheme}>
         {props.sections.map((section) => (
           <div key={section.title}>
-            <h3>{section.title}</h3>
+            <h3 style={{ textAlign: "center" }}>{section.title}</h3>
             {section["experiences"].map((experience, ind) => (
               <ExperienceCard experience={experience} theme={theme} key={ind} />
             ))}

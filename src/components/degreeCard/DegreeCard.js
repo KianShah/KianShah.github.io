@@ -103,9 +103,13 @@ function DegreeCard(props) {
             </div>
           </div>
           <div className="body-content">
-            {degree.descriptions.map((sentence) => {
+            {degree.descriptions.map((sentence, ind) => {
               return (
-                <p className="content-list" style={{ color: theme.text }}>
+                <p
+                  className="content-list"
+                  style={{ color: theme.text }}
+                  key={ind}
+                >
                   {sentence}
                 </p>
               );

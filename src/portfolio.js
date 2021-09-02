@@ -355,9 +355,9 @@ export const experience = {
           duration: "Jan 2021",
           location: "WFH",
           description:
-            "- During the 2021 NWHacks Hackathon, I mentored students requiring help in using tools like Python, Java, React, Git, among others.\n" +
-            "- I was also involved in the judging phase of the competition, grading projects based on presentation, code quality, and innovation.\n" +
-            "- Received the nwHacks 2021 Mentor Recognition Award\n",
+            "Mentored students requiring help in using tools like Python, Java, React, Git, and others.\n\n" +
+            "I was also involved in the judging phase of the competition, grading projects based on presentation, code quality, and innovation.\n\n" +
+            "Received the nwHacks 2021 Mentor Recognition Award",
           color: "#4285F4",
         },
       ],
