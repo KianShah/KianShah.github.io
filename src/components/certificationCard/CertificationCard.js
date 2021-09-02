@@ -23,7 +23,7 @@ function CertificationCard(props) {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <div className="content-overlay"></div>
+            <div className="content-overlay" />
             <div
               className="cert-header"
               style={{ backgroundColor: certificate.color_code }}

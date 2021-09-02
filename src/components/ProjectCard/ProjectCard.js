@@ -4,9 +4,9 @@ import "./ProjectCard.css";
 import { Fade } from "react-reveal";
 import { style } from "glamor";
 
-export default function ProjectCard({ repo, theme }) {
+export default function ProjectCard({ repo, ind, theme }) {
   function openRepoinNewTab(url) {
-    var win = window.open(url, "_blank");
+    const win = window.open(url, "_blank");
     win.focus();
   }
 
@@ -29,7 +29,7 @@ export default function ProjectCard({ repo, theme }) {
       <Fade bottom duration={2000} distance="40px">
         <div
           {...styles}
-          key={repo.id}
+          key={ind}
           onClick={() => openRepoinNewTab(repo.url)}
           style={{ backgroundColor: theme.projectCard }}
         >
