@@ -54,6 +54,12 @@
   }
 }
 
+@media (min-width: 1100px) {
+  .heading-img-div {
+    min-width: 1000px;
+  }
+}
+
 @media (max-width: 768px) {
   .heading-text {
     font-size: 30px;

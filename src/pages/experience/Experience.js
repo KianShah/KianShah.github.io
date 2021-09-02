@@ -38,7 +38,9 @@ function Experience(props) {
           </div>
         </Fade>
       </div>
-      <ExperiencesSection sections={experience["sections"]} theme={theme} />
+      <Fade right duration={2000} distance="40px">
+        <ExperiencesSection sections={experience["sections"]} theme={theme} />
+      </Fade>
     </div>
   );
 }
