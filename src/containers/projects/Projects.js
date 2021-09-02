@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { socialMediaLinks } from "../../portfolio";
 import "./Project.css";
 import ProjectCard from "../../components/ProjectCard/";
 
@@ -13,7 +14,7 @@ export default function Projects() {
           return <ProjectCard repo={v} key={v.node.id} />;
         })}
       </div>
-      <a className="resume-btn" href="https://github.com/harikanani">
+      <a className="resume-btn" href={socialMediaLinks.github}>
         More Projects (Github)
       </a>
     </div>

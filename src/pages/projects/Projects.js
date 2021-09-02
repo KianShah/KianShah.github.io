@@ -7,6 +7,7 @@ import { projectsHeader, projects } from "../../portfolio.js";
 import "./Projects.css";
 import ProjectsImg from "./ProjectsImg";
 import { style } from "glamor";
+import { socialMediaLinks } from "../../portfolio";
 
 function Projects(props) {
   const theme = props.theme;
@@ -45,18 +46,14 @@ function Projects(props) {
         </Fade>
       </div>
       <div className="repo-cards-div-main">
-        {projects.data.map((repo) => {
-          return <ProjectCard repo={repo} theme={theme} />;
-        })}
+        {projects.data.map((repo, ind) => (
+          <ProjectCard repo={repo} ind={ind} theme={theme} />
+        ))}
       </div>
       <br />
       <br />
       <br />
-      <a
-        {...styles}
-        className="general-btn"
-        href="https://github.com/harikanani"
-      >
+      <a {...styles} className="general-btn" href={socialMediaLinks.github}>
         More Projects (Github)
       </a>
       <br />
