@@ -7,7 +7,7 @@
     "analyze": "source-map-explorer 'build/static/js/*.js'",
     "build": "react-scripts build",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -b gh-pages -d build",
+    "deploy": "gh-pages -d build",
     "eject": "react-scripts eject",
     "start": "react-scripts start",
     "test": "react-scripts test"
