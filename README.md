@@ -1,9 +1,3 @@
-# PortfolioV2
-
-![PortfolioV2](/images/portfolio1.gif)
-
-### A clean portfolio template. (Readme will be updated soon)
-
 # Sections
 
 - Home
