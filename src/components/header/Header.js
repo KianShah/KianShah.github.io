@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./Header.css";
 import { Fade } from "react-reveal";
 import { NavLink, Link } from "react-router-dom";
-import { greeting, settings } from "../../portfolio.js";
+import { greeting } from "../../portfolio.js";
 import { CgSun } from "react-icons/cg";
 import { HiMoon } from "react-icons/hi";
 import { style } from "glamor";
@@ -28,8 +28,6 @@ function Header(props) {
       boxShadow: `0 3px 8px ${theme.name === "light" ? "#F7D774" : "#646464"}`,
     },
   });
-
-  const link = settings.isSplash ? "/splash" : "home";
 
   const [currTheme, setCurrTheme] = useState(theme.name);
 
@@ -64,7 +62,7 @@ function Header(props) {
     <Fade top duration={1000} distance="20px">
       <div>
         <header className="header">
-          <NavLink to={link} tag={Link} className="logo">
+          <NavLink to={"home"} tag={Link} className="logo">
             <span style={{ color: theme.text }} />
             <span className="logo-name" style={{ color: theme.text }}>
               {greeting.getLogo()}
@@ -118,17 +116,6 @@ function Header(props) {
                 style={{ borderRadius: 5, color: theme.text }}
               >
                 Projects
-              </NavLink>
-            </li>
-            <li>
-              <NavLink
-                className="cr"
-                to="/contact"
-                tag={Link}
-                activeStyle={{ fontWeight: "bold" }}
-                style={{ borderRadius: 5, color: theme.text }}
-              >
-                Contact and Resume
               </NavLink>
             </li>
             <button {...styles} onClick={changeTheme}>

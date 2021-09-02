@@ -1,6 +1,4 @@
 import React from "react";
-import Header from "../../components/header/Header";
-import Footer from "../../components/footer/Footer";
 import ProjectCard from "../../components/ProjectCard/ProjectCard";
 import { Fade } from "react-reveal";
 import { projectsHeader, projects } from "../../portfolio.js";
@@ -21,7 +19,6 @@ function Projects(props) {
 
   return (
     <div className="projects-main">
-      <Header theme={theme} setTheme={props.setTheme} />
       <div className="basic-projects">
         <Fade bottom duration={2000} distance="40px">
           <div className="projects-heading-div">
@@ -54,11 +51,10 @@ function Projects(props) {
       <br />
       <br />
       <a {...styles} className="general-btn" href={socialMediaLinks.github}>
-        More Projects (Github)
+        More Projects
       </a>
       <br />
       <br />
-      <Footer theme={props.theme} onToggle={props.onToggle} />
     </div>
   );
 }

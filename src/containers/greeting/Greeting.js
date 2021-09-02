@@ -30,13 +30,9 @@ export default function Greeting(props) {
                 style={{ color: theme.secondaryText }}
               >
                 <span>I'm </span>
-                <Link
-                  id="textLinkToContact"
-                  style={{ color: theme.accentColor }}
-                  onClick={() => history.push("/contact")}
-                >
+                <span style={{ color: theme.accentColor }}>
                   {greeting.full_name}.{" "}
-                </Link>
+                </span>
                 {greeting.subTitle}
               </p>
               <SocialMedia />
@@ -45,7 +41,7 @@ export default function Greeting(props) {
                   {...styles}
                   className="button"
                   onClick={() => {
-                    history.push("/contact");
+                    window.location.href += "#contact"; //Go to the target element.
                   }}
                 >
                   Contact Me

@@ -2,7 +2,6 @@
 
 // Website related settings
 export const settings = {
-  isSplash: true, // Change this to true if you want to use the splash screen.
   useCustomCursor: false, // Change this to false if you want the good'ol cursor
   googleTrackingID: "UA-174238252-2",
 };
@@ -27,10 +26,10 @@ export const logoNames = [
 export const greeting = {
   title: "Hello 👋.",
   title2: "Kian Shahangyan",
-  getLogo: () => logoNames[0],
+  getLogo: () => logoNames.sample(),
   nickname: "Kian",
   full_name: "Kian Shahangyan",
-  subTitle: "Full Stack Developer, Open Source Enthusiast 🔥. Always learning.",
+  subTitle: "Full Stack / Backend developer 🔥. Always learning.",
   resumeLink:
     "https://drive.google.com/file/d/1lKFjKNfBeTFe7jHFrk7upsLEpL1gEGDj/view?usp=sharing",
   mail: "mailto:kian.shahangyan@alumni.ubc.ca",
@@ -54,8 +53,8 @@ export const skills = {
       fileName: "FullStackImg",
       skills: [
         "⚡ Develop highly interactive Front End / User Interfaces for web and mobile applications",
-        "⚡ Building complex backend infrastructure to fulfill Business needs",
-        "⚡ Application deployment and creating links to AWS cloud",
+        "⚡ Building complex backend infrastructure to fulfill business goals",
+        "⚡ Application deployment and configuration on the cloud",
       ],
       softwareSkills: [
         {
@@ -286,7 +285,6 @@ export const certifications = {
       certificate_link:
         "https://drive.google.com/file/d/12se6bMep48WXA1PlizTBAgCnW0GXM6wq/view?usp=sharing",
       alt_name: "MongoDB University",
-      // color_code: "#2AAFED",
       color_code: "#47A048",
     },
     {
@@ -390,7 +388,8 @@ export const projects = {
     {
       name: "Ensemble AutoML",
       url: "https://github.com/nikkimoteva/unDecided",
-      description: "Lorem Ipsum",
+      description:
+        "A full-stack website developed as a group to enable easier access to ML",
       languages: [
         {
           name: "MongoDB Cloud",
@@ -417,7 +416,8 @@ export const projects = {
     {
       name: "Lived Experiences",
       url: "https://github.com/zareef4/lived-experiences-app",
-      description: "VanHacks 2020 Finalist",
+      description:
+        "A cross-platform mobile app for People of Colour to log their experiences of places in Vancouver. VanHacks 2020 Finalist",
       languages: [
         {
           name: "Javascript",
@@ -435,16 +435,13 @@ export const projects = {
     },
     {
       name: "UBCourseFinder",
-      url: "https://www.ubccoursefinder.com",
-      description: "Lorem Ipsum",
+      url: "https://www.ubccourses.ca",
+      description:
+        "A full-stack web application for UBC students to find courses and reserve seats",
       languages: [
         {
           name: "PostgreSQL",
           iconifyClass: "logos-postgresql",
-        },
-        {
-          name: "Typescript",
-          iconifyClass: "logos:typescript-icon",
         },
         {
           name: "Express",
