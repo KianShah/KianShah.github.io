@@ -3,7 +3,6 @@
 // Website related settings
 export const settings = {
   useCustomCursor: false, // Change this to false if you want the good'ol cursor
-  googleTrackingID: "UA-174238252-2",
 };
 
 // eslint-disable-next-line no-extend-native
