@@ -47,7 +47,7 @@ function Projects(props) {
       </div>
       <div className="repo-cards-div-main">
         {projects.data.map((repo, ind) => (
-          <ProjectCard repo={repo} ind={ind} theme={theme} />
+          <ProjectCard repo={repo} ind={ind} theme={theme} key={ind} />
         ))}
       </div>
       <br />

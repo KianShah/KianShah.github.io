@@ -5,6 +5,7 @@ import { skills } from "../../portfolio";
 import { Fade } from "react-reveal";
 import FullStackImg from "./FullStackImg";
 import CloudInfraImg from "./CloudInfraImg";
+
 // import DesignImg from "./DesignImg";
 
 function GetSkillSvg(props) {
@@ -22,7 +23,7 @@ function SkillSection(props) {
       {skills.data.map((skill, index) => {
         if (index % 2 === 0) {
           return (
-            <div className="skills-main-div">
+            <div className="skills-main-div" key={index}>
               <Fade left duration={2000}>
                 <div className="skills-image-div">
                   <GetSkillSvg fileName={skill.fileName} theme={theme} />
@@ -40,16 +41,15 @@ function SkillSection(props) {
                 </Fade>
                 <Fade right duration={2000}>
                   <div>
-                    {skill.skills.map((skillSentence) => {
-                      return (
-                        <p
-                          className="subTitle skills-text"
-                          style={{ color: theme.secondaryText }}
-                        >
-                          {skillSentence}
-                        </p>
-                      );
-                    })}
+                    {skill.skills.map((skillSentence, ind) => (
+                      <p
+                        className="subTitle skills-text"
+                        style={{ color: theme.secondaryText }}
+                        key={ind}
+                      >
+                        {skillSentence}
+                      </p>
+                    ))}
                   </div>
                 </Fade>
               </div>
@@ -57,7 +57,7 @@ function SkillSection(props) {
           );
         } else {
           return (
-            <div className="skills-main-div">
+            <div className="skills-main-div" key={index}>
               <div className="skills-text-div">
                 <Fade left duration={1000}>
                   <h1 className="skills-heading" style={{ color: theme.text }}>
@@ -69,11 +69,12 @@ function SkillSection(props) {
                 </Fade>
                 <Fade left duration={2000}>
                   <div>
-                    {skill.skills.map((skillSentence) => {
+                    {skill.skills.map((skillSentence, ind) => {
                       return (
                         <p
                           className="subTitle skills-text"
                           style={{ color: theme.secondaryText }}
+                          key={ind}
                         >
                           {skillSentence}
                         </p>
