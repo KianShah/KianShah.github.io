@@ -178,6 +178,13 @@ export const skills = {
           },
         },
         {
+          skillName: "Bash",
+          fontAwesomeClassname: "logos:bash-icon",
+          style: {
+            color: "#E94E32",
+          },
+        },
+        {
           skillName: "C",
           fontAwesomeClassname: "logos:c",
           style: {
