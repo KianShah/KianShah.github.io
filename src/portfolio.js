@@ -423,7 +423,7 @@ export const projects = {
       name: "Lived Experiences",
       url: "https://github.com/zareef4/lived-experiences-app",
       description:
-        "A cross-platform mobile app for People of Colour to log their experiences of places in Vancouver. VanHacks 2020 Finalist",
+        "A cross-platform mobile app for PoC to log their experiences of places in Vancouver. VanHacks 2020 Finalist.",
       languages: [
         {
           name: "Javascript",
@@ -464,6 +464,30 @@ export const projects = {
         {
           name: "Firebase",
           iconifyClass: "logos-firebase",
+        },
+      ],
+    },
+    {
+      name: "Budget Bunny",
+      url: "https://github.com/KianShah/NWHacks_2019",
+      description:
+        "A personal budgeting tool developed during NWHacks 2019 that uses ML vision to read pictures of uploaded receipts",
+      languages: [
+        {
+          name: "Java",
+          iconifyClass: "logos:java",
+        },
+        {
+          name: "Android",
+          iconifyClass: "logos:android-icon",
+        },
+        {
+          name: "Gradle",
+          iconifyClass: "logos:gradle",
+        },
+        {
+          name: "Google Mobile Vision",
+          iconifyClass: "mdi:ocr",
         },
       ],
     },
