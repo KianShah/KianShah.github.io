@@ -3,7 +3,7 @@ import "./Greeting.css";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
 import { greeting } from "../../portfolio";
 import { Fade } from "react-reveal";
-import { useHistory } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 import FeelingProud from "./FeelingProud";
 import { style } from "glamor";
 
@@ -30,9 +30,13 @@ export default function Greeting(props) {
                 style={{ color: theme.secondaryText }}
               >
                 <span>I'm </span>
-                <span style={{ color: theme.accentColor }}>
+                <Link
+                  id="textLinkToContact"
+                  style={{ color: theme.accentColor }}
+                  onClick={() => history.push("/contact")}
+                >
                   {greeting.full_name}.{" "}
-                </span>
+                </Link>
                 {greeting.subTitle}
               </p>
               <SocialMedia />

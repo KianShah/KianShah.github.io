@@ -114,3 +114,11 @@
     text-align: center;
   }
 }
+
+#textLinkToContact {
+  text-decoration: none;
+}
+
+#textLinkToContact:hover {
+  text-decoration: underline;
+}
