@@ -3,6 +3,7 @@
 // Website related settings
 export const settings = {
   useCustomCursor: false, // Change this to false if you want the good'ol cursor
+  googleTrackingID: "G-8X6FHHR9P4",
 };
 
 // eslint-disable-next-line no-extend-native
@@ -10,7 +11,7 @@ Array.prototype.sample = function () {
   return this[Math.floor(Math.random() * this.length)];
 };
 
-export const logoNames = [
+const logoNames = [
   "kian.portfolio()",
   "logo.generate()",
   "if ('2' == 2) { console.log(❤) }",
