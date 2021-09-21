@@ -463,6 +463,10 @@ export const projects = {
           iconifyClass: "logos:nodejs-icon",
         },
         {
+          name: "Python",
+          iconifyClass: "logos:python",
+        },
+        {
           name: "Firebase",
           iconifyClass: "logos-firebase",
         },
