@@ -31,7 +31,7 @@ export const greeting = {
   full_name: "Kian Shahangyan",
   subTitle: "Full Stack / Backend developer 🔥. Always learning.",
   resumeLink:
-    "https://drive.google.com/file/d/1lKFjKNfBeTFe7jHFrk7upsLEpL1gEGDj/view?usp=sharing",
+    "https://drive.google.com/file/d/1O4D-Yk48I8jh4J-MtzRlFDA9XR4YWcRI/view?usp=sharing",
   mail: "mailto:kian.shahangyan@alumni.ubc.ca",
 };
 
@@ -40,10 +40,10 @@ export const socialMediaLinks = {
   github: "https://github.com/kianshah",
   linkedin: "https://www.linkedin.com/in/kian-shahangyan/",
   google: "mailto:kianshah376@gmail.com",
-  // gitlab: "https://gitlab.com/harikanani",
-  // facebook: "https://www.facebook.com/harikrishan.kanani/",
-  // twitter: "https://twitter.com/Harikrushn9",
-  // instagram: "https://www.instagram.com/kanani_025/",
+  // gitlab: "",
+  // facebook: "",
+  // twitter: "",
+  // instagram: "",
 };
 
 export const skills = {
@@ -327,6 +327,25 @@ export const experience = {
       title: "Work Experience",
       experiences: [
         {
+          title: "Data Engineer",
+          company: "SupportingLines",
+          company_url: "https://supportinglines.com/",
+          logo_path: "supportinglines.png",
+          duration: "Oct 2021 - Present",
+          location: "Vancouver, BC",
+          description:
+            "Backend projects and skills\n" +
+            "• Refined and developed Python codebase to generate PDF reports from survey data\n" +
+            "• Created and maintained an ETL pipeline using Python and MySQL for processing of survey data\n" +
+            "\n" +
+            "Frontend/Full-stack projects:\n" +
+            "• Created Flask-based web application to expose report and survey-generation API to the SupportingLines Client Support team\n" +
+            "• Debugged major development and production issues, such as server deadlocks\n" +
+            "• Developed a standalone web application using the MERN stack (MongoDB/MySQL, Express, React NodeJS) to support clients in exploring their data, developing their leadership skills, and furthering their HR goals\n" +
+            "---- Integrated production-grade tools including Auth0, NextJS and the Mocha/Chai testing framework",
+          color: "#0071C5",
+        },
+        {
           title: "Co-op Software Developer",
           company: "Visier",
           company_url: "https://www.visier.com/",
@@ -359,7 +378,7 @@ export const experience = {
           company: "NWHacks",
           company_url: "https://www.nwhacks.io/",
           logo_path: "nwhacks.png",
-          duration: "Jan 2021",
+          duration: "Jan 2021, Jan 2022",
           location: "WFH",
           description:
             "Mentored students requiring help in using tools like Python, Java, React, Git, and others.\n\n" +

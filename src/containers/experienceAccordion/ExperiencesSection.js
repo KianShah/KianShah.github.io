@@ -10,7 +10,7 @@ function ExperiencesSection(props) {
     <div className="experience-accord">
       <ThemeProvider theme={theme.name === "light" ? LightTheme : DarkTheme}>
         {props.sections.map((section) => (
-          <div key={section.title}>
+          <div key={section.title} style={{ paddingTop: "10px" }}>
             <h3 style={{ textAlign: "center" }}>{section.title}</h3>
             {section["experiences"].map((experience, ind) => (
               <ExperienceCard experience={experience} theme={theme} key={ind} />
