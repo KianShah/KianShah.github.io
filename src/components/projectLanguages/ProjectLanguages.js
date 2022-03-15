@@ -24,7 +24,7 @@ function ProjectLanguages(props) {
                     logo.name === "NativeBase" ? (
                       <span className="iconify">
                         <img
-                          src={require("../../assests/images/nativebase.svg")}
+                          src={require("../../assets/images/nativebase.svg")}
                           alt="NativeBase"
                         />
                       </span>
