@@ -334,7 +334,7 @@ export const experience = {
           duration: "Oct 2021 - Present",
           location: "Vancouver, BC",
           description:
-            "Resposibilities and skills:\n" +
+            "Responsibilities and skills:\n" +
             "• Product Leadership: Led the design and development of a new web platform for our clients to integrate with their HR coaching sessions" +
             "• Worked cross-functionally with CEO and other stakeholders to design wireframes in Figma\n" +
             "• Built web application powered by Next.js and hosted using Google App Engine\n" +
@@ -342,6 +342,7 @@ export const experience = {
             "• Bootstrapped Cypress and Jest testing frameworks, and created unit, integration and e2e tests\n" +
             "• Integrated production-grade tools including Auth0, Knex.js, Typescript to make it easier to write high-quality, secure code\n" +
             "• Implemented secure coding practices including the OWASP Top 10, SAST tools like nodejsscan, and created documented procedures to ensure packages are not outdated and that our software supply chain is secure\n" +
+            "\n" +
             "Python: Developed Python codebase to generate data visualizations using Weasyprint and Pandas, and hosted on Google Cloud Functions as a micro-service\n" +
             "Machine Learning: Produced NLP visualizations using SpaCy, YAKE for Sentiment Analysis of text responses\n" +
             "Flask: Created Flask-based web application hosted on Heroku to allow Client Delivery team to generate surveys/reports\n" +
