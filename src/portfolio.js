@@ -334,15 +334,18 @@ export const experience = {
           duration: "Oct 2021 - Present",
           location: "Vancouver, BC",
           description:
-            "Backend projects and skills\n" +
-            "• Refined and developed Python codebase to generate PDF reports from survey data\n" +
-            "• Created and maintained an ETL pipeline using Python and MySQL for processing of survey data\n" +
-            "\n" +
-            "Frontend/Full-stack projects:\n" +
-            "• Created Flask-based web application to expose report and survey-generation API to the SupportingLines Client Support team\n" +
-            "• Debugged major development and production issues, such as server deadlocks\n" +
-            "• Developed a standalone web application using the MERN stack (MongoDB/MySQL, Express, React NodeJS) to support clients in exploring their data, developing their leadership skills, and furthering their HR goals\n" +
-            "---- Integrated production-grade tools including Auth0, NextJS and the Mocha/Chai testing framework",
+            "Resposibilities and skills:\n" +
+            "• Product Leadership: Led the design and development of a new web platform for our clients to integrate with their HR coaching sessions" +
+            "• Worked cross-functionally with CEO and other stakeholders to design wireframes in Figma\n" +
+            "• Built web application powered by Next.js and hosted using Google App Engine\n" +
+            "• Architected and built SQL (Google Cloud MySQL) and NoSQL (Firestore) databases to store customer data\n" +
+            "• Bootstrapped Cypress and Jest testing frameworks, and created unit, integration and e2e tests\n" +
+            "• Integrated production-grade tools including Auth0, Knex.js, Typescript to make it easier to write high-quality, secure code\n" +
+            "• Implemented secure coding practices including the OWASP Top 10, SAST tools like nodejsscan, and created documented procedures to ensure packages are not outdated and that our software supply chain is secure\n" +
+            "Python: Developed Python codebase to generate data visualizations using Weasyprint and Pandas, and hosted on Google Cloud Functions as a micro-service\n" +
+            "Machine Learning: Produced NLP visualizations using SpaCy, YAKE for Sentiment Analysis of text responses\n" +
+            "Flask: Created Flask-based web application hosted on Heroku to allow Client Delivery team to generate surveys/reports\n" +
+            "ETL: Created and maintained ETL pipelines for onboarding of customer survey data from Qualtrics into our MySQL database",
           color: "#0071C5",
         },
         {
