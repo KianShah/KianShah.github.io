@@ -31,7 +31,7 @@ export const greeting = {
   full_name: "Kian Shahangyan",
   subTitle: "Full Stack / Backend developer 🔥. Always learning.",
   resumeLink:
-    "https://drive.google.com/file/d/1O4D-Yk48I8jh4J-MtzRlFDA9XR4YWcRI/view?usp=sharing",
+    "https://drive.google.com/file/d/15qqCBifjrB-EIxh7H4u21WUu01jVm7lD/view?usp=sharing",
   mail: "mailto:kian.shahangyan@alumni.ubc.ca",
 };
 
