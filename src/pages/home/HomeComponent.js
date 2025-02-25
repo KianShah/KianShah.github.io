@@ -1,4 +1,3 @@
-import React from "react";
 import Greeting from "../../containers/greeting/Greeting";
 import Skills from "../../containers/skills/Skills";
 import Contact from "../../components/contact/ContactComponent";

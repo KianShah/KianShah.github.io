@@ -1,4 +1,3 @@
-import React from "react";
 import ProjectCard from "../../components/ProjectCard/ProjectCard";
 import Fade from "react-reveal/Fade";
 import { projectsHeader, projects } from "../../portfolio.js";

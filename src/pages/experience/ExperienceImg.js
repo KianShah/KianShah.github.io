@@ -1,4 +1,3 @@
-import React from "react";
 
 export default function ExperienceImg(props) {
   const theme = props.theme;

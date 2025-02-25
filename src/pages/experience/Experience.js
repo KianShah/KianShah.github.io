@@ -1,4 +1,3 @@
-import React from "react";
 import ExperiencesSection from "../../containers/experienceAccordion/ExperiencesSection.js";
 import "./Experience.css";
 import { experience } from "../../portfolio.js";

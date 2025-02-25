@@ -1,4 +1,3 @@
-import React from "react";
 import Educations from "../../containers/education/Educations";
 import Certifications from "../../containers/certifications/Certifications";
 import EducationImg from "./EducationImg";
