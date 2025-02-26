@@ -3,7 +3,7 @@ import { Fade } from "react-awesome-reveal";
 import { certifications } from "@/portfolio.js";
 import CertificationCard from "../../components/certificationCard/CertificationCard";
 import { useContext } from "react";
-import { ThemeContext, themes } from "@/app/util/ThemeContext";
+import { ThemeContext, themes } from "@/util/ThemeContext";
 
 function Certifications() {
   const {theme} = useContext(ThemeContext);
@@ -11,7 +11,7 @@ function Certifications() {
   return (
     <div className="main" id="certs">
       <div className="certs-header-div">
-        <Fade direction="bottom" duration={2000} distance="20px">
+        <Fade duration={2000} triggerOnce>
           <h1 className="certs-header" style={{ color: themes[theme].text }}>
             Certifications
           </h1>

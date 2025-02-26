@@ -2,7 +2,7 @@ import "./Educations.css";
 import DegreeCard from "../../components/degreeCard/DegreeCard.js";
 import { degrees } from "@/portfolio.js";
 import { Fade } from "react-awesome-reveal";
-import { ThemeContext, themes } from "@/app/util/ThemeContext";
+import { ThemeContext, themes } from "@/util/ThemeContext";
 import { useContext } from "react";
 
 
@@ -12,7 +12,7 @@ export default function Educations() {
   return (
     <div className="main" id="educations">
       <div className="educations-header-div">
-        <Fade bottom duration={2000} distance="20px">
+        <Fade direction="bottom" duration={2000} triggerOnce>
           <h1 className="educations-header" style={{ color: themes[theme].text }}>
             Degrees
           </h1>

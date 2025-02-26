@@ -6,7 +6,7 @@ import { experience } from "@/portfolio.js";
 import {Fade} from "react-awesome-reveal";
 import ExperienceImg from "./ExperienceImg.js";
 import { useContext } from "react";
-import { ThemeContext, themes } from "@/app/util/ThemeContext.jsx";
+import { ThemeContext, themes } from "@/util/ThemeContext.jsx";
 
 export default function Experience() {
   const {theme} = useContext(ThemeContext);
@@ -14,7 +14,7 @@ export default function Experience() {
   return (
     <div className="experience-main">
       <div className="basic-experience">
-        <Fade direction="bottom" duration={2000} triggerOnce>
+        <Fade duration={2000} triggerOnce>
           <div className="experience-heading-div">
             <div className="experience-heading-img-div">
               <ExperienceImg theme={themes[theme]} />
@@ -42,7 +42,7 @@ export default function Experience() {
           </div>
         </Fade>
       </div>
-      <Fade direction="right" duration={2000} triggerOnce>
+      <Fade duration={1500} triggerOnce>
         <ExperiencesSection sections={experience["sections"]} />
       </Fade>
     </div>

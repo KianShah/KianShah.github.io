@@ -4,13 +4,13 @@ import SocialMedia from "../../components/socialMedia/SocialMedia";
 import { greeting } from "@/portfolio.js";
 import { Fade } from "react-awesome-reveal";
 import FeelingProud from "./FeelingProud";
-import { ThemeContext, themes } from "@/app/util/ThemeContext";
+import { ThemeContext, themes } from "@/util/ThemeContext";
 
 export default function Greeting() {
   const {theme} = useContext(ThemeContext);
 
   return (
-    <Fade bottom duration={2000} distance="40px">
+    <Fade duration={2000} triggerOnce>
       <div className="greet-main" id="greeting">
         <div className="greeting-main">
           <div className="greeting-text-div">

@@ -2,12 +2,12 @@ import { Icon } from "@iconify/react";
 import "./ProjectLanguages.css";
 import { OverlayTrigger, Tooltip } from "react-bootstrap";
 
-function ProjectLanguages(props) {
+export default function ProjectLanguages({logos}) {
   return (
     <div>
       <div className="software-skills-main-div">
         <ul className="dev-icons-languages">
-          {props.logos.map((logo) => {
+          {logos.map((logo) => {
             return (
               <OverlayTrigger
                 key={logo.name}
@@ -25,11 +25,12 @@ function ProjectLanguages(props) {
                       <span className="iconify">
                         <img
                           src="/images/nativebase.svg"
+                          width="30px"
                           alt="NativeBase"
                         />
                       </span>
                     ) : (
-                      <Icon icon={logo.iconifyClass} />
+                      <Icon icon={logo.iconifyClass} color="#586069" />
                     )
                   }
                 </li>
@@ -41,5 +42,3 @@ function ProjectLanguages(props) {
     </div>
   );
 }
-
-export default ProjectLanguages;

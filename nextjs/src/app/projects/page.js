@@ -6,7 +6,7 @@ import { projectsHeader, projects, socialMediaLinks } from "@/portfolio.js";
 import "./Projects.css";
 import ProjectsImg from "./ProjectsImg";
 import { useContext } from "react";
-import { ThemeContext, themes } from "../util/ThemeContext";
+import { ThemeContext, themes } from "@/util/ThemeContext";
 
 export default function Projects() {
   const {theme} = useContext(ThemeContext);
@@ -24,7 +24,7 @@ export default function Projects() {
       `}</style>
       
       <div className="basic-projects">
-        <Fade direction="bottom" duration={2000} distance="40px">
+        <Fade duration={2000} triggerOnce>
           <div className="projects-heading-div">
             <div className="projects-heading-img-div">
               <ProjectsImg theme={themes[theme]} />

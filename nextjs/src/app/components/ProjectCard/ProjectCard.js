@@ -2,7 +2,7 @@ import { useContext } from "react";
 import ProjectLanguages from "../projectLanguages/ProjectLanguages";
 import "./ProjectCard.css";
 import { Fade } from "react-awesome-reveal";
-import { ThemeContext, themes } from "@/app/util/ThemeContext";
+import { ThemeContext, themes } from "@/util/ThemeContext";
 
 export default function ProjectCard({ repo, ind }) {
   const { theme } = useContext(ThemeContext);
@@ -25,13 +25,13 @@ export default function ProjectCard({ repo, ind }) {
           box-shadow: ${themes[theme].imageDark} 0 2px 15px;
         }
       `}</style>
-      <Fade direction="bottom" duration={2000}>
+      <Fade duration={2000} triggerOnce>
         <div
           className="projectCardHolder"
           key={ind}
           style={{ backgroundColor: themes[theme].projectCard }}
         >
-          <a href={repo.url} target="_blank">
+          <a href={repo.url} target="_blank" style={{textDecoration: "none"}}>
             <div className="repo-name-div">
               <p className="repo-name" style={{ color: themes[theme].text }}>
                 {repo.name}

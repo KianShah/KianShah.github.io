@@ -1,6 +1,6 @@
 import "./DegreeCard.css";
 import { Fade, Flip } from "react-awesome-reveal";
-import { ThemeContext, themes } from "@/app/util/ThemeContext";
+import { ThemeContext, themes } from "@/util/ThemeContext";
 import { useContext } from "react";
 
 export default function DegreeCard({ degree }) {
@@ -95,7 +95,7 @@ export default function DegreeCard({ degree }) {
           </a>
         </div>
       </Flip>
-      <Fade direction="right" duration={2000} triggerOnce>
+      <Fade duration={2000} triggerOnce>
 
         <div className="cardBody" style={{width: "100%", height: "100%"}}>
           <div

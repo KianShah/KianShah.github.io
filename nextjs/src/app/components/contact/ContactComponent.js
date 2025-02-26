@@ -4,7 +4,7 @@ import { Fade } from "react-awesome-reveal";
 import "./ContactComponent.css";
 import { greeting, contactPageData } from "@/portfolio.js";
 import Image from "next/image";
-import { ThemeContext, themes } from "@/app/util/ThemeContext.jsx";
+import { ThemeContext, themes } from "@/util/ThemeContext.jsx";
 
 const ContactData = contactPageData.contactSection;
 
@@ -24,7 +24,7 @@ export default function Contact() {
       `}</style>
 
       <div className="basic-contact">
-        <Fade bottom duration={1000} distance="40px">
+        <Fade duration={1000} triggerOnce>
           <div className="contact-heading-div">
             <div className="contact-heading-img-div">
               <img

@@ -1,6 +1,6 @@
 import "./Skills.css";
 import { useContext } from "react";
-import {ThemeContext, themes} from "@/app/util/ThemeContext";
+import {ThemeContext, themes} from "@/util/ThemeContext";
 import SoftwareSkill from "@/app/components/softwareSkills/SoftwareSkill";
 import { skills } from "@/portfolio.js";
 import { Slide } from "react-awesome-reveal";
@@ -61,7 +61,7 @@ export default function SkillSection() {
                     {skill.title}
                   </h1>
                   <SoftwareSkill logos={skill.softwareSkills} />
-                  <div>
+                  <div style={{marginLeft: "10%"}}>
                     {skill.skills.map((skillSentence, ind) => {
                       return (
                         <p

@@ -1,6 +1,6 @@
 import React, {useContext} from "react";
 import "./Footer.css";
-import { ThemeContext, themes } from "@/app/util/ThemeContext";
+import { ThemeContext, themes } from "@/util/ThemeContext";
 
 export default function Footer() {
   const {theme} = useContext(ThemeContext);

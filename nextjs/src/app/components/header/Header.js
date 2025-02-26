@@ -2,26 +2,42 @@ import React, { useContext } from "react";
 import "./Header.css";
 import Link from "next/link";
 import { greeting } from "@/portfolio.js";
-import { CgSun } from "react-icons/cg";
-import { HiMoon } from "react-icons/hi";
-import { ThemeContext, themes } from "@/app/util/ThemeContext";
+import { ThemeContext, themes } from "@/util/ThemeContext";
+import { Icon } from "@iconify/react";
+import { usePathname } from "next/navigation";
+
+function ActiveLink({ href, children, style, ...props }) {
+  const pathname = usePathname();
+  const isActive = pathname === href;
+
+  return (
+    <Link
+      href={href}
+      style={{ fontWeight: (isActive) ? "bold" : "normal", ...style }}
+      {...props}
+    >
+      {children}
+    </Link>
+  );
+};
+
 
 export default function Header() {
 
   const {theme, changeTheme} = useContext(ThemeContext);
 
-  const icon =
-    theme === "dark" ? (
-      <HiMoon
-        strokeWidth={1}
-        size={20}
-        color={theme === "light" ? "#F9D784" : "#A7A7A7"}
+  const ThemeIcon =
+    (theme === "dark") ? (
+      <Icon
+        icon="line-md:moon-twotone"
+        width="28px"
+        color= "#A7A7A7"
       />
     ) : (
-      <CgSun
-        strokeWidth={1}
-        size={20}
-        color={theme === "light" ? "#F9D784" : "#A7A7A7"}
+      <Icon
+        icon="solar:sun-bold"
+        width="28px"
+        color="#F9D784"
       />
     );
 
@@ -35,7 +51,6 @@ export default function Header() {
               width: 45px;
               margin-right: 5px;
               margin-left: 15px;
-              padding-top: 5px;
               border-radius: 50%;
               border: none;
               display: flex;
@@ -49,6 +64,7 @@ export default function Header() {
             .changeTheme:hover {
               box-shadow: 0 3px 8px ${(theme === "light") ? "#F7D774" : "#646464"}
             }
+
           `}</style>
           <Link href="/" className="logo">
             <span style={{ color: themes[theme].text }} />
@@ -63,44 +79,43 @@ export default function Header() {
           </label>
           <ul className="menu">
             <li>
-              <Link
+              <ActiveLink
                 className="homei"
                 href="/"
-                // activeStyle={{ fontWeight: "bold" }}
                 style={{ borderRadius: 5, color: themes[theme].text }}
               >
                 Home
-              </Link>
+              </ActiveLink>
             </li>
             <li>
-              <Link
+              <ActiveLink
                 className="ec"
                 href="/education"
                 style={{ borderRadius: 5, color: themes[theme].text }}
               >
                 Education and Certifications
-              </Link>
+              </ActiveLink>
             </li>
             <li>
-              <Link
+              <ActiveLink
                 className="xp"
                 href="/experience"
                 style={{ borderRadius: 5, color: themes[theme].text }}
               >
                 Experience
-              </Link>
+              </ActiveLink>
             </li>
             <li>
-              <Link
+              <ActiveLink
                 className="projects"
                 href="/projects"
                 style={{ borderRadius: 5, color: themes[theme].text }}
               >
                 Projects
-              </Link>
+              </ActiveLink>
             </li>
             <button className="changeTheme" onClick={changeTheme}>
-              {icon}
+              {ThemeIcon}
             </button>
           </ul>
         </header>

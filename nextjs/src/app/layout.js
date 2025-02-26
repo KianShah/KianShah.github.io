@@ -4,10 +4,9 @@ import { useState, useEffect } from "react";
 import Header from "./components/header/Header";
 import Footer from "./components/footer/Footer";
 import "./globals.css";
-import { ThemeContext, themes } from "./util/ThemeContext";
+import { ThemeContext, themes } from "@/util/ThemeContext";
 import { Geist, Geist_Mono } from "next/font/google";
 import StyledJsxRegistry from './registry'
-
 
 
 const geistSans = Geist({
@@ -52,7 +51,7 @@ export default function RootLayout({ children }) {
         >
           <StyledJsxRegistry>
             <Header/>
-            {children}
+              {children}
             <Footer/>
           </StyledJsxRegistry>
         </body>

@@ -1,13 +1,13 @@
 import "./CertificationCard.css";
 import { Fade } from "react-awesome-reveal";
 import {useContext} from "react";
-import {ThemeContext, themes} from "@/app/util/ThemeContext";
+import {ThemeContext, themes} from "@/util/ThemeContext";
 
 export default function CertificationCard({certificate}) {
   const {theme} = useContext(ThemeContext);
 
   return (
-    <Fade bottom duration={2000} distance="20px">
+    <Fade duration={2000} triggerOnce>
       <style jsx>{`
         cert-card: {
           boxShadow: 0px 2px 5px ${certificate.color_code},

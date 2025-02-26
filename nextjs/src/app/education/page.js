@@ -6,7 +6,7 @@ import Certifications from "../containers/certifications/Certifications";
 import EducationImg from "./EducationImg";
 import "./EducationComponent.css";
 import { Fade } from "react-awesome-reveal";
-import { ThemeContext, themes } from "../util/ThemeContext";
+import { ThemeContext, themes } from "@/util/ThemeContext";
 
 function Education() {
   const {theme} = useContext(ThemeContext)
