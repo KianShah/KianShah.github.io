@@ -1,6 +1,6 @@
 import React from "react";
 import "./SoftwareSkill.css";
-import { OverlayTrigger, Tooltip } from "react-bootstrap";
+import { OverlayTrigger, Tooltip } from "react-bootstrap"; // Used to show a tooltip when hovering over a software skill
 import { Icon } from "@iconify/react";
 
 export default function SoftwareSkill({logos}) {

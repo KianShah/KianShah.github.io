@@ -10,7 +10,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "next": "15.1.7",
+    "next": "^15.1.7",
     "react": "^19.0.0",
     "react-awesome-reveal": "^4.3.1",
     "react-bootstrap": "^2.10.9",

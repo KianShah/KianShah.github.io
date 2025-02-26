@@ -24,7 +24,7 @@ export default function Contact() {
       `}</style>
 
       <div className="basic-contact">
-        <Fade duration={1000} triggerOnce>
+        <Fade duration={1500} triggerOnce>
           <div className="contact-heading-div">
             <div className="contact-heading-img-div">
               <img
