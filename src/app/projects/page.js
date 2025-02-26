@@ -1,6 +1,6 @@
 "use client"
 
-import ProjectCard from "@/app/components/ProjectCard/ProjectCard";
+import ProjectCard from "@/components/ProjectCard/ProjectCard";
 import { Fade } from "react-awesome-reveal";
 import { projectsHeader, projects, socialMediaLinks } from "@/portfolio.js";
 import "./Projects.css";

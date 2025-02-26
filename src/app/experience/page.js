@@ -1,6 +1,6 @@
 "use client"
 
-import ExperiencesSection from "@/app/containers/experienceAccordion/ExperiencesSection.js";
+import ExperiencesSection from "@/containers/experienceAccordion/ExperiencesSection.js";
 import "./Experience.css";
 import { experience } from "@/portfolio.js";
 import {Fade} from "react-awesome-reveal";

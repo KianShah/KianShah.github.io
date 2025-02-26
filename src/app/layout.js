@@ -1,8 +1,8 @@
 "use client"
 
 import { useState, useEffect } from "react";
-import Header from "./components/header/Header";
-import Footer from "./components/footer/Footer";
+import Header from "../components/header/Header";
+import Footer from "../components/footer/Footer";
 import "./globals.css";
 import { ThemeContext, themes } from "@/util/ThemeContext";
 import { Geist, Geist_Mono } from "next/font/google";

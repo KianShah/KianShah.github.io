@@ -1,4 +1,4 @@
-import ExperienceCard from "@/app/components/experienceCard/ExperienceCard.js";
+import ExperienceCard from "@/components/experienceCard/ExperienceCard.js";
 import "./ExperienceAccordion.css";
 
 export default function ExperiencesSection({ sections }) {

@@ -1,8 +1,8 @@
 "use client"
 
 import {useContext} from "react";
-import Educations from "../containers/education/Educations";
-import Certifications from "../containers/certifications/Certifications";
+import Educations from "../../containers/education/Educations";
+import Certifications from "../../containers/certifications/Certifications";
 import EducationImg from "./EducationImg";
 import "./EducationComponent.css";
 import { Fade } from "react-awesome-reveal";
