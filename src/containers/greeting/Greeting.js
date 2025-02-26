@@ -20,7 +20,7 @@ export default function Greeting() {
                 className="greeting-text-p subTitle"
                 style={{ color: themes[theme].secondaryText }}
               >
-                <span>I'm </span>
+                <span>I&apos;m </span>
                 <span style={{ color: themes[theme].accentColor }}>
                   {greeting.full_name}.{" "}
                 </span>

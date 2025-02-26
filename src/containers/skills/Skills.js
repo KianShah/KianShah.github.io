@@ -12,7 +12,7 @@ export default function Skills() {
       <div className="skills-header-div">
         <Fade duration={2000} triggerOnce>
           <h1 className="skills-header" style={{ color: themes[theme].text }}>
-            Here's what I do
+            Here&apos;s what I do
           </h1>
         </Fade>
       </div>

@@ -19,7 +19,7 @@ function Certifications() {
       </div>
       <div className="certs-body-div">
         {certifications.certifications.map(cert => {
-          return <CertificationCard certificate={cert} theme={themes[theme]} />;
+          return <CertificationCard certificate={cert} theme={themes[theme]} key={cert.title} />;
         })}
       </div>
     </div>
