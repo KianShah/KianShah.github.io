@@ -196,38 +196,17 @@ export const skills = {
           },
         },
         {
-          skillName: "Heroku",
-          fontAwesomeClassname: "simple-icons:heroku",
-          style: {
-            color: "#6863A6",
-          },
-        },
-        {
           skillName: "Firebase",
-          fontAwesomeClassname: "simple-icons:firebase",
+          fontAwesomeClassname: "devicon:firebase",
           style: {
             color: "#FFCA28",
           },
         },
         {
-          skillName: "MongoDB Cloud",
-          fontAwesomeClassname: "simple-icons:mongodb",
+          skillName: "Google Cloud",
+          fontAwesomeClassname: "logos:google-cloud",
           style: {
             color: "#47A248",
-          },
-        },
-        {
-          skillName: "Docker",
-          fontAwesomeClassname: "simple-icons:docker",
-          style: {
-            color: "#1488C6",
-          },
-        },
-        {
-          skillName: "Jenkins",
-          fontAwesomeClassname: "vscode-icons:file-type-jenkins",
-          style: {
-            color: "#1438C6",
           },
         },
       ],
@@ -290,8 +269,7 @@ export const certifications = {
 export const experience = {
   title: "Experience",
   subtitle: "Work and Volunteer experience",
-  description:
-    "I've completed 1 year of Co-op. I've mostly done projects on my own and I am actively looking for a new full-time opportunity.",
+  description: "",
   header_image_path: "experience.svg",
   sections: [
     {

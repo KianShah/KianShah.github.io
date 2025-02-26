@@ -1,12 +1,11 @@
+import { useContext } from "react";
 import ProjectLanguages from "../projectLanguages/ProjectLanguages";
 import "./ProjectCard.css";
-import Fade from "react-reveal/Fade";
+import { Fade } from "react-awesome-reveal";
+import { ThemeContext, themes } from "@/app/util/ThemeContext";
 
-export default function ProjectCard({ repo, ind, theme }) {
-  function openRepoinNewTab(url) {
-    const win = window.open(url, "_blank");
-    win.focus();
-  }
+export default function ProjectCard({ repo, ind }) {
+  const { theme } = useContext(ThemeContext);
 
   return (
     <div>
@@ -30,20 +29,21 @@ export default function ProjectCard({ repo, ind, theme }) {
         <div
           className="projectCardHolder"
           key={ind}
-          onClick={() => openRepoinNewTab(repo.url)}
-          style={{ backgroundColor: theme.projectCard }}
+          style={{ backgroundColor: themes[theme].projectCard }}
         >
-          <div className="repo-name-div">
-            <p className="repo-name" style={{ color: theme.text }}>
-              {repo.name}
+          <a href={repo.url} target="_blank">
+            <div className="repo-name-div">
+              <p className="repo-name" style={{ color: themes[theme].text }}>
+                {repo.name}
+              </p>
+            </div>
+            <p className="repo-description" style={{ color: themes[theme].text }}>
+              {repo.description}
             </p>
-          </div>
-          <p className="repo-description" style={{ color: theme.text }}>
-            {repo.description}
-          </p>
-          <div className="repo-details">
-            <ProjectLanguages logos={repo.languages} />
-          </div>
+            <div className="repo-details">
+              <ProjectLanguages logos={repo.languages} />
+            </div>
+          </a>
         </div>
       </Fade>
     </div>

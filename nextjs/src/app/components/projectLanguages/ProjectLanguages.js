@@ -1,3 +1,4 @@
+import { Icon } from "@iconify/react";
 import "./ProjectLanguages.css";
 import { OverlayTrigger, Tooltip } from "react-bootstrap";
 
@@ -23,16 +24,12 @@ function ProjectLanguages(props) {
                     logo.name === "NativeBase" ? (
                       <span className="iconify">
                         <img
-                          src={require("../../assets/images/nativebase.svg")}
+                          src="/images/nativebase.svg"
                           alt="NativeBase"
                         />
                       </span>
                     ) : (
-                      <span
-                        className="iconify"
-                        data-icon={logo.iconifyClass}
-                        data-inline="false"
-                      />
+                      <Icon icon={logo.iconifyClass} />
                     )
                   }
                 </li>

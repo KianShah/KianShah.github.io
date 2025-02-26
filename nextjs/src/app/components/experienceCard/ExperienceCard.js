@@ -1,8 +1,9 @@
+import { useContext } from "react";
 import "./ExperienceCard.css";
+import { ThemeContext, themes } from "@/app/util/ThemeContext";
 
-function ExperienceCard(props) {
-  const experience = props.experience;
-  const theme = props.theme;
+export default function ExperienceCard({ experience }) {
+  const {theme} = useContext(ThemeContext)
 
   return (
     <div
@@ -20,7 +21,7 @@ function ExperienceCard(props) {
         >
           <img
             className="experience-card-logo"
-            src={require(`../../assets/images/${experience["logo_path"]}`)}
+            src={`/images/${experience["logo_path"]}`}
             alt=""
           />
         </a>
@@ -28,12 +29,12 @@ function ExperienceCard(props) {
       <div className="experience-card-body-div">
         <div className="experience-card-header-div">
           <div className="experience-card-heading-left">
-            <h3 className="experience-card-title" style={{ color: theme.text }}>
+            <h3 className="experience-card-title" style={{ color: themes[theme].text }}>
               {experience["title"]}
             </h3>
             <p
               className="experience-card-company"
-              style={{ color: theme.secondaryText }}
+              style={{ color: themes[theme].secondaryText }}
             >
               <a
                 href={experience["company_url"]}
@@ -47,13 +48,13 @@ function ExperienceCard(props) {
           <div className="experience-card-heading-right">
             <p
               className="experience-card-duration"
-              style={{ color: theme.secondaryText }}
+              style={{ color: themes[theme].secondaryText }}
             >
               {experience["duration"]}
             </p>
             <p
               className="experience-card-location"
-              style={{ color: theme.secondaryText }}
+              style={{ color: themes[theme].secondaryText }}
             >
               {experience["location"]}
             </p>
@@ -61,7 +62,7 @@ function ExperienceCard(props) {
         </div>
         <p
           className="experience-card-description"
-          style={{ color: theme.text, whiteSpace: "pre-line" }}
+          style={{ color: themes[theme].text, whiteSpace: "pre-line" }}
         >
           {experience["description"]}
         </p>
@@ -69,5 +70,3 @@ function ExperienceCard(props) {
     </div>
   );
 }
-
-export default ExperienceCard;
