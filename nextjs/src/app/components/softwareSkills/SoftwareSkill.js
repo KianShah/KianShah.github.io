@@ -1,13 +1,14 @@
+import React from "react";
 import "./SoftwareSkill.css";
 import { OverlayTrigger, Tooltip } from "react-bootstrap";
+import { Icon } from "@iconify/react";
 
-function SoftwareSkill(props) {
+export default function SoftwareSkill({logos}) {
   return (
     <div>
       <div className="software-skills-main-div">
         <ul className="dev-icons">
-          {props.logos.map((logo) => {
-            return (
+          {logos.map(logo => (
               <OverlayTrigger
                 key={logo.skillName}
                 placement={"top"}
@@ -18,20 +19,16 @@ function SoftwareSkill(props) {
                 }
               >
                 <li className="software-skill-inline" name={logo.skillName}>
-                  <span
-                    className="iconify"
-                    data-icon={logo.fontAwesomeClassname}
+                  <Icon
+                    icon={logo.fontAwesomeClassname}
                     style={logo.style}
-                    data-inline="false"
                   />
                 </li>
               </OverlayTrigger>
-            );
-          })}
+            )
+          )}
         </ul>
       </div>
     </div>
   );
 }
-
-export default SoftwareSkill;

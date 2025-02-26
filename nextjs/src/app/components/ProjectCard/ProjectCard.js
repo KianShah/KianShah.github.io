@@ -1,7 +1,6 @@
 import ProjectLanguages from "../projectLanguages/ProjectLanguages";
 import "./ProjectCard.css";
 import Fade from "react-reveal/Fade";
-import { style } from "glamor";
 
 export default function ProjectCard({ repo, ind, theme }) {
   function openRepoinNewTab(url) {
@@ -9,25 +8,27 @@ export default function ProjectCard({ repo, ind, theme }) {
     win.focus();
   }
 
-  const styles = style({
-    color: "rgb(88, 96, 105)",
-    backgroundColor: "rgb(255, 255, 255)",
-    boxShadow: "rgba(0, 0, 0, 0.2) 0px 10px 30px -15px",
-    padding: "2rem",
-    cursor: "pointer",
-    borderRadius: "5px",
-    height: "100%",
-    transition: "all 0.2s ease-in-out",
-    ":hover": {
-      boxShadow: `${theme.imageDark} 0 2px 15px`,
-    },
-  });
-
   return (
     <div>
-      <Fade bottom duration={2000} distance="40px">
+      <style jsx>{`
+        .projectCardHolder {
+          color: rgb(88, 96, 105);
+          background-color: rgb(255, 255, 255);
+          box-shadow: rgba(0, 0, 0, 0.2) 0px 10px 30px -15px;
+          padding: 2rem;
+          cursor: pointer;
+          border-radius: 5px;
+          height: 100%;
+          transitiion: all 0.2s ease-in-out;
+        }
+
+        .projectCardHolder:hover {
+          box-shadow: ${themes[theme].imageDark} 0 2px 15px;
+        }
+      `}</style>
+      <Fade direction="bottom" duration={2000}>
         <div
-          {...styles}
+          className="projectCardHolder"
           key={ind}
           onClick={() => openRepoinNewTab(repo.url)}
           style={{ backgroundColor: theme.projectCard }}

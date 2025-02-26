@@ -50,7 +50,7 @@ export default function Header() {
               box-shadow: 0 3px 8px ${(theme === "light") ? "#F7D774" : "#646464"}
             }
           `}</style>
-          <Link href="/home" className="logo">
+          <Link href="/" className="logo">
             <span style={{ color: themes[theme].text }} />
             <span className="logo-name" style={{ color: themes[theme].text }}>
               {greeting.getLogo()}

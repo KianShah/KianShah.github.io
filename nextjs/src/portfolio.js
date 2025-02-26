@@ -32,20 +32,26 @@ export const greeting = {
   subTitle: "Full Stack / Backend developer 🔥. Always learning.",
   resumeLink:
     "https://drive.google.com/file/d/15qqCBifjrB-EIxh7H4u21WUu01jVm7lD/view?usp=sharing",
-  mail: "mailto:kian.shahangyan@alumni.ubc.ca",
+  mail: "mailto:kian.shahangyan@gmail.com",
 };
 
 export const socialMediaLinks = {
-  /* Your Social Media Link */
-  github: "https://github.com/kianshah",
-  linkedin: "https://www.linkedin.com/in/kian-shahangyan/",
-  google: "mailto:kian.shahangyan@gmail.com",
-  // gitlab: "",
-  // facebook: "",
-  // twitter: "",
-  // instagram: "",
+  // Icons from iconify
+  github: {
+    link: "https://github.com/kianshah",
+    icon: "cib:github"
+  },
+  linkedin: {
+    link: "https://www.linkedin.com/in/kian-shahangyan/",
+    icon: "cib:linkedin"
+  },
+  google: {
+    link: "mailto:kian.shahangyan@gmail.com",
+    icon: "cib:google"
+  }
 };
 
+// logos with iconify
 export const skills = {
   data: [
     {
@@ -65,20 +71,6 @@ export const skills = {
           },
         },
         {
-          skillName: "Java",
-          fontAwesomeClassname: "logos:java",
-          style: {
-            color: "#f89820",
-          },
-        },
-        {
-          skillName: "Scala",
-          fontAwesomeClassname: "logos:scala",
-          style: {
-            color: "#dc322f",
-          },
-        },
-        {
           skillName: "JavaScript",
           fontAwesomeClassname: "simple-icons:javascript",
           style: {
@@ -95,15 +87,22 @@ export const skills = {
           },
         },
         {
-          skillName: "React",
-          fontAwesomeClassname: "logos:react",
+          skillName: "NodeJS",
+          fontAwesomeClassname: "logos:nodejs-icon",
+          style: {
+            color: "#339933",
+          },
+        },
+        {
+          skillName: "Next.js",
+          fontAwesomeClassname: "devicon:nextjs",
           style: {
             color: "#61DAFB",
           },
         },
         {
-          skillName: "MaterialUI",
-          fontAwesomeClassname: "logos:material-ui",
+          skillName: "React",
+          fontAwesomeClassname: "logos:react",
           style: {
             color: "#61DAFB",
           },
@@ -116,24 +115,17 @@ export const skills = {
           },
         },
         {
-          skillName: "NodeJS",
-          fontAwesomeClassname: "simple-icons:node-dot-js",
+          skillName: "MaterialUI",
+          fontAwesomeClassname: "logos:material-ui",
           style: {
-            color: "#339933",
+            color: "#61DAFB",
           },
         },
         {
-          skillName: "NPM",
-          fontAwesomeClassname: "simple-icons:npm",
+          skillName: "Bootstrap",
+          fontAwesomeClassname: "skill-icons:bootstrap",
           style: {
-            color: "#CB3837",
-          },
-        },
-        {
-          skillName: "Yarn",
-          fontAwesomeClassname: "logos:yarn",
-          style: {
-            color: "#CB3837",
+            color: "#61DAFB",
           },
         },
         {
@@ -183,27 +175,6 @@ export const skills = {
           fontAwesomeClassname: "logos:bash-icon",
           style: {
             color: "#E94E32",
-          },
-        },
-        {
-          skillName: "C",
-          fontAwesomeClassname: "logos:c",
-          style: {
-            color: "#E94E32",
-          },
-        },
-        {
-          skillName: "C++",
-          fontAwesomeClassname: "logos:c-plusplus",
-          style: {
-            color: "#E94E32",
-          },
-        },
-        {
-          skillName: "IntelliJ",
-          fontAwesomeClassname: "logos:intellij-idea",
-          style: {
-            color: "#61DAFB",
           },
         },
       ],

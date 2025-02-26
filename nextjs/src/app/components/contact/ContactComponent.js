@@ -1,26 +1,28 @@
-import React, {useContext} from "react";
+import React, { useContext } from "react";
 import SocialMedia from "../socialMedia/SocialMedia.js";
-import Fade from "@/app/util/Fade";
+import { Fade } from "react-awesome-reveal";
 import "./ContactComponent.css";
 import { greeting, contactPageData } from "@/portfolio.js";
-// import { style } from "glamor";
 import Image from "next/image";
 import { ThemeContext, themes } from "@/app/util/ThemeContext.jsx";
 
 const ContactData = contactPageData.contactSection;
 
-function Contact() {
-  const {theme} = useContext(ThemeContext);
-
-  // const styles = style({
-  //   backgroundColor: `${themes[theme].accentBright}`,
-  //   ":hover": {
-  //     boxShadow: `0 5px 15px ${themes[theme].accentBright}`,
-  //   },
-  // });
+export default function Contact() {
+  const { theme } = useContext(ThemeContext);
 
   return (
     <div className="contact-main">
+      <style jsx>{`
+        .general-btn {
+          background-color: ${themes[theme].accentBright};
+        }
+
+        .general-btn:hover {
+          box-shadow: 0px 5px 15px ${themes[theme].accentBright}
+        }
+      `}</style>
+
       <div className="basic-contact">
         <Fade bottom duration={1000} distance="40px">
           <div className="contact-heading-div">
@@ -57,5 +59,3 @@ function Contact() {
     </div>
   );
 }
-
-export default Contact;

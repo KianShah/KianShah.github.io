@@ -6,7 +6,7 @@ import ProjectsImg from "./ProjectsImg";
 import { style } from "glamor";
 import { socialMediaLinks } from "../../portfolio";
 
-function Projects(props) {
+export default function Projects(props) {
   const theme = props.theme;
 
   const styles = style({
@@ -57,5 +57,3 @@ function Projects(props) {
     </div>
   );
 }
-
-export default Projects;

@@ -1,7 +1,7 @@
 import React, {useContext} from "react";
 import "./Skills.css";
 import SkillSection from "./SkillSection";
-import Fade from "@/app/util/Fade";
+import { Fade } from "react-awesome-reveal";
 import { ThemeContext, themes } from "@/app/util/ThemeContext";
 
 export default function Skills() {
@@ -16,7 +16,7 @@ export default function Skills() {
           </h1>
         </Fade>
       </div>
-      <SkillSection theme={themes[theme]} />
+      <SkillSection />
     </div>
   );
 }

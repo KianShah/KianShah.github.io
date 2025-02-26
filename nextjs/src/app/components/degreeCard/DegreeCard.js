@@ -1,91 +1,106 @@
 import "./DegreeCard.css";
-import { Fade, Flip } from "react-reveal";
-import { style } from "glamor";
+import { Fade, Flip } from "react-awesome-reveal";
+import { ThemeContext, themes } from "@/app/util/ThemeContext";
+import { useContext } from "react";
 
-function DegreeCard(props) {
-  const degree = props.degree;
-  const theme = props.theme;
-
-  const style_img = style({
-    width: "220px",
-    height: "auto",
-    borderRadius: " 50%",
-    padding: "10px",
-    border: `1px solid ${theme.accentColor}`,
-    marginRight: "50px",
-    boxShadow: `0px 0px 5px ${theme.accentColor}`,
-    transition: "all 0.2s ease-in-out",
-    ":hover": {
-      color: "rgba(255, 255, 255, 1)",
-      boxShadow: `0 5px 15px ${theme.accentColor}`,
-    },
-    "@media (max-width: 768px)": {
-      marginLeft: "50px",
-      marginBottom: "15px",
-      width: "175px",
-    },
-  });
-
-  const card_body = style({
-    borderBottom: `1px solid ${theme.accentColor}`,
-    borderLeft: `1px solid ${theme.accentColor}`,
-    borderRight: `1px solid ${theme.accentColor}`,
-    borderRadius: "7px",
-    width: "90%",
-    margin: "10px",
-    boxShadow: `0px 1px 5px ${theme.accentColor}`,
-    transition: "all 0.2s ease-in-out",
-    ":hover": {
-      color: "rgba(255, 255, 255, 1)",
-      boxShadow: `0 5px 15px ${theme.accentColor}`,
-    },
-    "@media (max-width: 768px)": {
-      width: "100%",
-    },
-  });
-
-  const button_visit = style({
-    textDecoration: "none",
-    color: "rgba(255, 255, 255, 1)",
-    background: `${theme.accentColor}`,
-    padding: "15px 15px",
-    marginTop: "25px",
-    borderRadius: "4px",
-    borderWidth: "0px",
-    marginBottom: "20px",
-    width: "200px",
-    height: "50px",
-    fontWeight: "bold",
-    fontFamily: "Google Sans Regular",
-    fontSize: "17px",
-    transition: "all 0.2s ease-in-out",
-    cursor: "pointer",
-    ":hover": {
-      color: "rgba(255, 255, 255, 1)",
-      boxShadow: `0 5px 10px ${theme.accentColor}`,
-    },
-  });
+export default function DegreeCard({ degree }) {
+  const { theme } = useContext(ThemeContext);
 
   return (
     <div className="degree-card">
-      <Flip left duration={2000}>
-        <div {...style_img}>
-          <img
-            style={{
-              maxWidth: "100%",
-              maxHeight: "100%",
-              transform: "scale(-70%) rotate(180deg)",
-            }}
-            src={require(`../../assets/images/${degree.logo_path}`)}
-            alt={degree.alt_name}
-          />
+      <style jsx>{`
+        .cardBody {
+          border-bottom: 1px solid ${themes[theme].accentColor};
+          border-left: 1px solid ${themes[theme].accentColor};
+          border-right: 1px solid ${themes[theme].accentColor};
+          border-radius: 7px;
+          width: 90%;
+          margin: 10px;
+          box-shadow: 0px 1px 5px ${themes[theme].accentColor};
+          transition: all 0.2s ease-in-out;
+        }
+
+        .cardBody:hover {
+          color: rgba(255, 255, 255, 1);
+          box-shadow: 0 5px 15px ${themes[theme].accentColor};
+        }
+
+        @media (max-width: 768px) {
+          .cardBody {
+            width: 100%;
+          }
+        }
+
+        .buttonVisit {
+          text-decoration: none;
+          color: rgba(255, 255, 255, 1);
+          background: ${themes[theme].accentColor};
+          padding: 15px 15px;
+          margin-top: 25px;
+          border-radius: 4px;
+          border-width: 0px;
+          margin-bottom: 20px;
+          width: 200px;
+          height: 50px;
+          font-weight: bold;
+          font-family: "Google Sans Regular", sans-serif;
+          font-size: 17px;
+          transition: all 0.2s ease-in-out;
+          cursor: pointer;
+          display: inline-block;
+        }
+
+        .buttonVisit:hover {
+          color: rgba(255, 255, 255, 1);
+          box-shadow: 0 5px 10px ${themes[theme].accentColor};
+        }
+
+        .degreeCard {
+          width: 220px;
+          height: auto;
+          border-radius: 50%;
+          padding: 10px;
+          border: 1px solid ${themes[theme].accentColor};
+          margin-right: 50px;
+          box-shadow: 0px 0px 5px ${themes[theme].accentColor};
+          transition: all 0.2s ease-in-out;
+        }
+
+        .degreeCard:hover {
+          color: rgba(255, 255, 255, 1);
+          box-shadow: 0 5px 15px ${themes[theme].accentColor};
+        }
+
+        @media (max-width: 768px) {
+          .degreeCard {
+            margin-left: 50px;
+            margin-bottom: 15px;
+            width: 175px;
+          }
+        }
+      `}</style>
+
+      <Flip direction="left" duration={1000} triggerOnce>
+        <div className="degreeCard">
+          <a href={degree.website_link}>
+            <img
+              style={{
+                maxWidth: "100%",
+                maxHeight: "100%",
+                transform: "scale(-70%) rotate(180deg)",
+              }}
+              src={`/images/${degree.logo_path}`}
+              alt={degree.alt_name}
+            />
+          </a>
         </div>
       </Flip>
-      <Fade right duration={2000} distance="40px">
-        <div {...card_body}>
+      <Fade direction="right" duration={2000} triggerOnce>
+
+        <div className="cardBody" style={{width: "100%", height: "100%"}}>
           <div
             className="body-header"
-            style={{ backgroundColor: theme.accentColor }}
+            style={{ backgroundColor: themes[theme].accentColor }}
           >
             <div className="body-header-title">
               <h2 className="card-title" style={{ color: "#FFFFFF" }}>
@@ -106,36 +121,16 @@ function DegreeCard(props) {
               return (
                 <p
                   className="content-list"
-                  style={{ color: theme.text }}
+                  style={{ color: themes[theme].text }}
                   key={ind}
                 >
                   {sentence}
                 </p>
               );
             })}
-            <a
-              href={degree.website_link}
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{ textDecoration: "none", textAlign: "center" }}
-            >
-              <p
-                {...button_visit}
-                style={{
-                  marginRight: "23px",
-                  textDecoration: "none",
-                  float: "right",
-                  backgroundColor: theme.accentColor,
-                }}
-              >
-                Visit Website
-              </p>
-            </a>
           </div>
         </div>
       </Fade>
     </div>
   );
 }
-
-export default DegreeCard;

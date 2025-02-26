@@ -1,21 +1,23 @@
 import "./CertificationCard.css";
-import Fade from "react-reveal/Fade";
-import { style } from "glamor";
+import { Fade } from "react-awesome-reveal";
+import {useContext} from "react";
+import {ThemeContext, themes} from "@/app/util/ThemeContext";
 
-function CertificationCard(props) {
-  const certificate = props.certificate;
-  const theme = props.theme;
-  const styles = style({
-    boxShadow: `0px 2px 5px ${certificate.color_code}`,
-    border: `1px solid ${certificate.color_code}`,
-    ":hover": {
-      boxShadow: `0 5px 15px ${certificate.color_code}`,
-    },
-  });
+export default function CertificationCard({certificate}) {
+  const {theme} = useContext(ThemeContext);
 
   return (
     <Fade bottom duration={2000} distance="20px">
-      <div className="cert-card" {...styles}>
+      <style jsx>{`
+        cert-card: {
+          boxShadow: 0px 2px 5px ${certificate.color_code},
+          border: 1px solid ${certificate.color_code}
+        }
+        cert-card:hover: {
+          boxShadow: 0 5px 15px ${certificate.color_code}
+        }
+      `}</style>
+      <div className="cert-card">
         <div className="content">
           <a
             href={certificate.certificate_link}
@@ -29,7 +31,7 @@ function CertificationCard(props) {
             >
               <img
                 className="logo_img"
-                src={require(`../../assets/images/${certificate.logo_path}`)}
+                src={`/images/${certificate.logo_path}`}
                 alt={certificate.alt_name}
               />
             </div>
@@ -41,7 +43,7 @@ function CertificationCard(props) {
           </a>
         </div>
         <div className="cert-body">
-          <h2 className="cert-body-title" style={{ color: theme.text }}>
+          <h2 className="cert-body-title" style={{ color: themes[theme].text }}>
             {certificate.title}
           </h2>
           <h3
@@ -55,5 +57,3 @@ function CertificationCard(props) {
     </Fade>
   );
 }
-
-export default CertificationCard;

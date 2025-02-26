@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import "./Greeting.css";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
 import { greeting } from "@/portfolio.js";
-import Fade from "@/app/util/Fade";
+import { Fade } from "react-awesome-reveal";
 import FeelingProud from "./FeelingProud";
 import { ThemeContext, themes } from "@/app/util/ThemeContext";
 
