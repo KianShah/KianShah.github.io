@@ -25,7 +25,7 @@ export const greeting = {
   full_name: "Kian Shahangyan",
   subTitle: "Full Stack / Backend developer 🔥. Always learning.",
   resumeLink:
-    "https://drive.google.com/file/d/1ck_osTv9uzmmQTOgcb6rkMHaKSYQ2Xg_/view?usp=sharing",
+    "https://drive.google.com/file/d/1QzJ-VK7BTC_MpoCAVLxQsvm8-rPir1Zv/view",
   mail: "mailto:kian.shahangyan@gmail.com",
 };
 

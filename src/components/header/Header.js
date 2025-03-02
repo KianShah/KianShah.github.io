@@ -93,7 +93,7 @@ export default function Header() {
                 href="/education"
                 style={{ borderRadius: 5, color: themes[theme].text }}
               >
-                Education and Certifications
+                Education
               </ActiveLink>
             </li>
             <li>
