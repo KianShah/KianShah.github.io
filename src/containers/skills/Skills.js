@@ -2,7 +2,7 @@ import React, {useContext} from "react";
 import "./Skills.css";
 import SkillSection from "./SkillSection";
 import { Fade } from "react-awesome-reveal";
-import { ThemeContext, themes } from "@/util/ThemeContext";
+import { ThemeContext, themes } from "@/Theme";
 
 export default function Skills() {
   const {theme} = useContext(ThemeContext);

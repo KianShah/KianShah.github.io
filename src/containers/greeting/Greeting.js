@@ -1,10 +1,9 @@
 import React, { useContext } from "react";
 import "./Greeting.css";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
-import { greeting } from "@/portfolio.js";
 import { Fade } from "react-awesome-reveal";
 import FeelingProud from "./FeelingProud";
-import { ThemeContext, themes } from "@/util/ThemeContext";
+import { ThemeContext, themes } from "@/Theme";
 
 export default function Greeting() {
   const {theme} = useContext(ThemeContext);
@@ -15,16 +14,16 @@ export default function Greeting() {
         <div className="greeting-main">
           <div className="greeting-text-div">
             <div>
-              <h1 className="greeting-text">{greeting.title}</h1>
+              <h1 className="greeting-text">Hello 👋.</h1>
               <p
                 className="greeting-text-p subTitle"
                 style={{ color: themes[theme].secondaryText }}
               >
                 <span>I&apos;m </span>
                 <span style={{ color: themes[theme].accentColor }}>
-                  {greeting.full_name}.{" "}
+                  Kian Shahangyan.{" "}
                 </span>
-                {greeting.subTitle}
+                Full Stack / Backend developer 🔥. Always learning 📖.
               </p>
               <SocialMedia />
             </div>

@@ -5,6 +5,7 @@ Array.prototype.sample = function () {
   return this[Math.floor(Math.random() * this.length)];
 };
 
+
 const logoNames = [
   "kian.portfolio()",
   "logo.generate()",
@@ -16,18 +17,9 @@ const logoNames = [
   "🙈 🙉 🙊",
 ];
 
-//Home Page
-export const greeting = {
-  title: "Hello 👋.",
-  title2: "Kian Shahangyan",
-  getLogo: () => logoNames.sample(),
-  nickname: "Kian",
-  full_name: "Kian Shahangyan",
-  subTitle: "Full Stack / Backend developer 🔥. Always learning.",
-  resumeLink:
-    "https://drive.google.com/file/d/1QzJ-VK7BTC_MpoCAVLxQsvm8-rPir1Zv/view",
-  mail: "mailto:kian.shahangyan@gmail.com",
-};
+export const getLogo = () => logoNames.sample();
+export const resumeLink = "https://drive.google.com/file/d/1QzJ-VK7BTC_MpoCAVLxQsvm8-rPir1Zv/view";
+export const profile_image_path = "kian-compressed.jpg";
 
 export const socialMediaLinks = {
   // Icons from iconify
@@ -229,32 +221,14 @@ export const degrees = {
 export const certifications = {
   certifications: [
     {
-      title: "M0001: MongoDB Basics",
-      subtitle: "MongoDB University",
-      logo_path: "mongo.png",
+      title: "",
+      subtitle: "",
+      logo_path: "",
       certificate_link:
-        "https://drive.google.com/file/d/12se6bMep48WXA1PlizTBAgCnW0GXM6wq/view?usp=sharing",
-      alt_name: "MongoDB University",
-      color_code: "#47A048",
-    },
-    {
-      title: "Hackathon",
-      subtitle: "NWHacks",
-      logo_path: "nwhacks.png",
-      certificate_link:
-        "https://drive.google.com/file/d/12u_tkvhgB-K2TIm-RDdJOwYbQ9ccqiqA/view?usp=sharing",
-      alt_name: "hackathon",
-      color_code: "#E2405F",
-    },
-    // color_code: "#8C151599",
-    // color_code: "#7A7A7A",
-    // color_code: "#0C9D5899",
-    // color_code: "#C5E2EE",
-    // color_code: "#ffc475",
-    // color_code: "#g",
-    // color_code: "#ffbfae",
-    // color_code: "#fffbf3",
-    // color_code: "#b190b0",
+        "",
+      alt_name: "",
+      color_code: "",
+    }
   ],
 };
 
@@ -333,24 +307,6 @@ export const experience = {
       ],
     },
   ],
-};
-
-// Projects Page
-export const projectsHeader = {
-  title: "Projects",
-  description:
-    "My projects make use of a vast variety of modern frameworks and tools. Most of my experience consists of developing full-stack projects and deploying them on the Cloud.",
-  avatar_image_path: "projects_image.svg",
-};
-
-// Contact Page
-export const contactPageData = {
-  contactSection: {
-    title: "Contact Me",
-    profile_image_path: "kian-compressed.jpg",
-    description:
-      "You can contact me at the places mentioned below. I will try to get back to you as fast as I can! ",
-  },
 };
 
 export const projects = {

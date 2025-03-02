@@ -1,6 +1,6 @@
 import "./DegreeCard.css";
 import { Fade, Flip } from "react-awesome-reveal";
-import { ThemeContext, themes } from "@/util/ThemeContext";
+import { ThemeContext, themes } from "@/Theme";
 import { useContext } from "react";
 
 export default function DegreeCard({ degree }) {

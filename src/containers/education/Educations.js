@@ -2,7 +2,7 @@ import "./Educations.css";
 import DegreeCard from "../../components/degreeCard/DegreeCard.js";
 import { degrees } from "@/portfolio.js";
 import { Fade } from "react-awesome-reveal";
-import { ThemeContext, themes } from "@/util/ThemeContext";
+import { ThemeContext, themes } from "@/Theme";
 import { useContext } from "react";
 
 

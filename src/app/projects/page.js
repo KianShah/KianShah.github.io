@@ -2,11 +2,11 @@
 
 import ProjectCard from "@/components/ProjectCard/ProjectCard";
 import { Fade } from "react-awesome-reveal";
-import { projectsHeader, projects, socialMediaLinks } from "@/portfolio.js";
+import { projects, socialMediaLinks } from "@/portfolio.js";
 import "./Projects.css";
 import ProjectsImg from "./ProjectsImg";
 import { useContext } from "react";
-import { ThemeContext, themes } from "@/util/ThemeContext";
+import { ThemeContext, themes } from "@/Theme";
 
 export default function Projects() {
   const {theme} = useContext(ThemeContext);
@@ -34,13 +34,13 @@ export default function Projects() {
                 className="projects-heading-text"
                 style={{ color: themes[theme].text }}
               >
-                {projectsHeader.title}
+                Projects
               </h1>
               <p
                 className="projects-header-detail-text subTitle"
                 style={{ color: themes[theme].secondaryText }}
               >
-                {projectsHeader["description"]}
+                My projects make use of a vast variety of modern frameworks and tools. Most of my experience consists of developing full-stack projects and deploying them on the Cloud.
               </p>
             </div>
           </div>

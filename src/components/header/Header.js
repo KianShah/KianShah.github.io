@@ -1,8 +1,8 @@
 import React, { useContext } from "react";
 import "./Header.css";
 import Link from "next/link";
-import { greeting } from "@/portfolio.js";
-import { ThemeContext, themes } from "@/util/ThemeContext";
+import { getLogo } from "@/portfolio.js";
+import { ThemeContext, themes } from "@/Theme";
 import { Icon } from "@iconify/react";
 import { usePathname } from "next/navigation";
 
@@ -69,7 +69,7 @@ export default function Header() {
           <Link href="/" className="logo">
             <span style={{ color: themes[theme].text }} />
             <span className="logo-name" style={{ color: themes[theme].text }}>
-              {greeting.getLogo()}
+              {getLogo()}
             </span>
             <span style={{ color: themes[theme].text }} />
           </Link>

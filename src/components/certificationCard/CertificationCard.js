@@ -1,7 +1,7 @@
 import "./CertificationCard.css";
 import { Fade } from "react-awesome-reveal";
 import {useContext} from "react";
-import {ThemeContext, themes} from "@/util/ThemeContext";
+import {ThemeContext, themes} from "@/Theme";
 
 export default function CertificationCard({certificate}) {
   const {theme} = useContext(ThemeContext);

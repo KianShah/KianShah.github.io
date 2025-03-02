@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import "./ExperienceCard.css";
-import { ThemeContext, themes } from "@/util/ThemeContext";
+import { ThemeContext, themes } from "@/Theme";
 
 export default function ExperienceCard({ experience }) {
   const {theme} = useContext(ThemeContext)

@@ -6,7 +6,7 @@ import { experience } from "@/portfolio.js";
 import {Fade} from "react-awesome-reveal";
 import ExperienceImg from "./ExperienceImg.js";
 import { useContext } from "react";
-import { ThemeContext, themes } from "@/util/ThemeContext.jsx";
+import { ThemeContext, themes } from "@/Theme.js";
 
 export default function Experience() {
   const {theme} = useContext(ThemeContext);

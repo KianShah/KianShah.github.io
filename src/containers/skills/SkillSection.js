@@ -1,6 +1,6 @@
 import "./Skills.css";
 import { useContext } from "react";
-import {ThemeContext, themes} from "@/util/ThemeContext";
+import {ThemeContext, themes} from "@/Theme";
 import SoftwareSkill from "@/components/softwareSkills/SoftwareSkill";
 import { skills } from "@/portfolio.js";
 import { Slide } from "react-awesome-reveal";

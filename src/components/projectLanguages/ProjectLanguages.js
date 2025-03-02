@@ -7,8 +7,7 @@ export default function ProjectLanguages({logos}) {
     <div>
       <div className="software-skills-main-div">
         <ul className="dev-icons-languages">
-          {logos.map((logo) => {
-            return (
+          {logos.map((logo) => (
               <OverlayTrigger
                 key={logo.name}
                 placement={"top"}
@@ -35,8 +34,8 @@ export default function ProjectLanguages({logos}) {
                   }
                 </li>
               </OverlayTrigger>
-            );
-          })}
+            ))
+          }
         </ul>
       </div>
     </div>

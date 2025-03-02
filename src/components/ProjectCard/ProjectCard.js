@@ -2,7 +2,7 @@ import { useContext } from "react";
 import ProjectLanguages from "../projectLanguages/ProjectLanguages";
 import "./ProjectCard.css";
 import { Fade } from "react-awesome-reveal";
-import { ThemeContext, themes } from "@/util/ThemeContext";
+import { ThemeContext, themes } from "@/Theme";
 
 export default function ProjectCard({ repo, ind }) {
   const { theme } = useContext(ThemeContext);

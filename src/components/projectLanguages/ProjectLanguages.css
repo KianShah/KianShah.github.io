@@ -14,7 +14,7 @@
   font-family: "Google Sans Regular";
 }
 
-#tooltip-top > .tooltip-inner {
+.tooltip-top > .tooltip-inner {
   background-color: #fff;
   color: #000;
   border: 1px solid #062e56;
@@ -23,7 +23,7 @@
   margin-bottom: 2px;
 }
 
-#tooltip-top > .tooltip-arrow {
+.tooltip-top > .tooltip-arrow {
   border-top: 5px solid #062e56;
 }
 

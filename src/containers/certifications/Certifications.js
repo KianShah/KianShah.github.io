@@ -3,7 +3,7 @@ import { Fade } from "react-awesome-reveal";
 import { certifications } from "@/portfolio.js";
 import CertificationCard from "../../components/certificationCard/CertificationCard";
 import { useContext } from "react";
-import { ThemeContext, themes } from "@/util/ThemeContext";
+import { ThemeContext, themes } from "@/Theme";
 
 function Certifications() {
   const {theme} = useContext(ThemeContext);

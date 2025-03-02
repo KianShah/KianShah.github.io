@@ -2,11 +2,9 @@ import React, { useContext } from "react";
 import SocialMedia from "../socialMedia/SocialMedia.js";
 import { Fade } from "react-awesome-reveal";
 import "./ContactComponent.css";
-import { greeting, contactPageData } from "@/portfolio.js";
+import { resumeLink, profile_image_path } from "@/portfolio.js";
 import Image from "next/image";
-import { ThemeContext, themes } from "@/util/ThemeContext.jsx";
-
-const ContactData = contactPageData.contactSection;
+import { ThemeContext, themes } from "@/Theme.js";
 
 export default function Contact() {
   const { theme } = useContext(ThemeContext);
@@ -29,7 +27,7 @@ export default function Contact() {
             <div className="contact-heading-img-div">
               <img
                 className="profile-pic"
-                src={`/images/${ContactData["profile_image_path"]}`}
+                src={`/images/${profile_image_path}`}
                 alt=""
               />
             </div>
@@ -38,18 +36,18 @@ export default function Contact() {
                 className="contact-heading-text"
                 style={{ color: themes[theme].text }}
               >
-                {ContactData["title"]}
+                Contact Me
               </h1>
               <p
                 className="contact-header-detail-text subTitle"
                 style={{ color: themes[theme].secondaryText }}
               >
-                {ContactData["description"]}
+                You can contact me at the places mentioned below. I will try to get back to you as fast as I can!
               </p>
               <SocialMedia />
               <br />
               <br />
-              <a className="general-btn" href={greeting.resumeLink}>
+              <a className="general-btn" href={resumeLink}>
                 See my Resume
               </a>
             </div>
