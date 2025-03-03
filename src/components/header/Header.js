@@ -114,9 +114,11 @@ export default function Header() {
                 Projects
               </ActiveLink>
             </li>
-            <button className="changeTheme" onClick={changeTheme}>
-              {ThemeIcon}
-            </button>
+            <div className="changeThemeContainer">
+              <button className="changeTheme" onClick={changeTheme}>
+                {ThemeIcon}
+              </button>
+            </div>
           </ul>
         </header>
       </div>
