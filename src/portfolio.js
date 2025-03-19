@@ -247,7 +247,7 @@ export const experience = {
           company: "SupportingLines",
           company_url: "https://supportinglines.com/",
           logo_path: "supportinglines.png",
-          duration: "Oct 2021 - Nov 2024",
+          duration: "Oct 2021 - May 2024",
           location: "Vancouver, BC",
           description:
             "Team Leadership:\n" +
