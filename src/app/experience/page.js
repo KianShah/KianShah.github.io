@@ -2,7 +2,6 @@
 
 import ExperiencesSection from "@/containers/experienceAccordion/ExperiencesSection.js";
 import "./Experience.css";
-import { experience } from "@/portfolio.js";
 import {Fade} from "react-awesome-reveal";
 import ExperienceImg from "./ExperienceImg.js";
 import { useContext } from "react";
@@ -24,26 +23,20 @@ export default function Experience() {
                 className="experience-heading-text"
                 style={{ color: themes[theme].text }}
               >
-                {experience.title}
+                Experience
               </h1>
               <h3
                 className="experience-heading-sub-text"
                 style={{ color: themes[theme].text }}
               >
-                {experience["subtitle"]}
+                Work and Volunteer experience
               </h3>
-              <p
-                className="experience-header-detail-text subTitle"
-                style={{ color: themes[theme].secondaryText }}
-              >
-                {experience["description"]}
-              </p>
             </div>
           </div>
         </Fade>
       </div>
       <Fade duration={1500} triggerOnce>
-        <ExperiencesSection sections={experience["sections"]} />
+        <ExperiencesSection />
       </Fade>
     </div>
   );

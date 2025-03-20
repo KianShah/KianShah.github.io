@@ -234,10 +234,6 @@ export const certifications = {
 
 // Experience Page
 export const experience = {
-  title: "Experience",
-  subtitle: "Work and Volunteer experience",
-  description: "",
-  header_image_path: "experience.svg",
   sections: [
     {
       title: "Work Experience",
