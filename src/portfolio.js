@@ -308,6 +308,25 @@ export const experience = {
 export const projects = {
   data: [
     {
+      name: "Vast-ai API",
+      url: "https://pypi.org/project/vast-ai-api",
+      description: "An open-source Python library for Vast-ai",
+      languages: [
+        {
+          name: "Vast-ai",
+          iconifyClass: ""
+        },
+        {
+          name: "Python",
+          iconifyClass: "logos:python"
+        },
+        {
+          name: "Pypi",
+          iconifyClass: "devicon:pypi"
+        }
+      ]
+    },
+    {
       name: "Ensemble AutoML",
       url: "https://github.com/nikkimoteva/unDecided",
       description:

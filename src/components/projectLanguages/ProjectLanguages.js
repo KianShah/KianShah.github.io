@@ -10,22 +10,22 @@ export default function ProjectLanguages({logos}) {
           {logos.map((logo) => (
               <OverlayTrigger
                 key={logo.name}
-                placement={"top"}
+                placement={"bottom"}
                 overlay={
-                  <Tooltip id={`tooltip-top`}>
+                  <Tooltip id={`tooltip-bottom`}>
                     <strong>{logo.name}</strong>
                   </Tooltip>
                 }
               >
                 <li className="software-skill-inline-languages">
                   {
-                    // Custom svg for nativebase because iconify doesn't have it :(
-                    logo.name === "NativeBase" ? (
+                    // Custom svg for some because iconify doesn't have it
+                    logo.iconifyClass === "" ? (
                       <span className="iconify">
                         <img
-                          src="/images/nativebase.svg"
+                          src={`/images/${logo.name}.svg`}
                           width="30px"
-                          alt="NativeBase"
+                          alt={logo.name}
                         />
                       </span>
                     ) : (
