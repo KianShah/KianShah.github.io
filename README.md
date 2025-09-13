@@ -14,7 +14,6 @@
 
 # Customization
 
-- Replace `homepage` in package.json to your domain name or `https://<username>.github.io`
 - In `src/portfolio.js` you can add your personal portfolio details
 - In `src/util/ThemeContext.jsx` you can change the theme colors
 

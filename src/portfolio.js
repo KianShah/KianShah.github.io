@@ -239,6 +239,18 @@ export const experience = {
       title: "Work Experience",
       experiences: [
         {
+          title: "AI Trainer",
+          company: "DataAnnotation",
+          company_url: "https://dataannotation.tech/",
+          logo_path: "dataAnnotation.svg",
+          duration: "Nov 2024 - Present",
+          location: "Remote",
+          description:
+            "RLHF Training: Refined conversational AI models in coding tasks involving a variety of programming languages \n" +
+            "and frameworks, including Python, Javascript, Typescript, React, Next.js and Terraform",
+          color: "#081016ff",
+        },
+        {
           title: "Dev Lead",
           company: "SupportingLines",
           company_url: "https://supportinglines.com/",
@@ -248,7 +260,8 @@ export const experience = {
           description:
             "Team Leadership:\n" +
             "• Oversaw all stages of the software development lifecycle from initial concept to final delivery. \n" +
-            "• Worked cross-functionally with CEO and other stakeholders to manage project timelines and design and develop features leading to dozens of signups prior to our official launch of the platform\n" +
+            "• Worked cross-functionally with CEO and other stakeholders to manage project timelines and design and develop \n" +
+            "features leading to dozens of signups prior to our official launch of the platform\n" +
             "• Facilitated regular sprint meetings to track progress, address challenges, and plan future sprints\n" +
             "• Performed code reviews in Python and Typescript to ensure code quality and team member improvement\n" +
             "• Mentored and supervised interns, ensuring code quality and personal improvement\n" +
